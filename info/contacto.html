@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html>
+
+	<head>
+		<title>Documentación DAW XHTML</title>
+		<meta name="author" content="Javier Latorre">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
+	</head>
+
+	<body topmargin="0" leftmargin="5%" rightmargin="5%" link="#A11600" alink="#A11600" vlink="#A11600">
+				
+		<!-- ENCABEZADO -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th width="488px" align="left" bgcolor="#ffcc66">
+					<img src="../images/encabezado.png" alt="Documentación DAW XHTML 1.0">
+				</th>
+			</tr>
+		</table>
+
+		<!-- MENÚ -->
+		<table height="40" width="100%" cellspacing="0" cellpadding="0" border="5" align="center">
+			<tr>
+				<th><a href="../index.html"><font face="arial" color="#000">Inicio</font></a></th>
+				<th><a href="../tema/texto.html"><font face="arial" color="#000">Texto</font></a></th>
+				<th><a href="../tema/enlaces.html"><font face="arial" color="#000">Enlaces</font></a></th>
+				<th><a href="../tema/listas.html"><font face="arial" color="#000">Listas</font></a></th>
+				<th><a href="../tema/imagenes.html"><font face="arial" color="#000">Imágenes</font></a></th>
+				<th><a href="../tema/tablas.html"><font face="arial" color="#000">Tablas</font></a></th>
+				<th><a href="../tema/formularios.html"><font face="arial" color="#000">Formularios</font></a></th>
+			</tr>
+		</table>
+
+		<!-- CONTENIDO CONTACTO -->
+		<table width="100%">
+			<tr>
+				<td>
+					<!--Contacto-->
+					<font color="#005B9C"><h2>Contacto</h2></font>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Puedes contactarme en:</h3>
+								<a href="mailto:jlalovi@gmail.com.com" title="jlalovi@gmail.com"><img src="../images/gmail.png" alt="Gmail"></a>
+								<a href="https://www.facebook.com/jlalovi" title="Facebook"><img src="../images/facebook.png" alt="Facebook"></a>
+								<a href="https://www.linkedin.com/in/jlalovi" title="LinkedIn"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+
+								<h3>Si quieres participar para mejorar este proyecto, rellena el siguiente formulario:</h3>
+								<form action="/php/insertar_subasta.php" method="post" enctype="multipart/form-data">
+									<fieldset>
+										<legend>Datos básicos</legend>
+
+										<br/>
+
+										<label for="nombre">Nombre</label>
+										<br/><br/>
+										<input type="text" id="nombre" name="nombre" value="" />
+										<br/><br/>
+										 
+										<label for="apellidos">Apellidos</label>
+										<br/>
+										<input type="text" id="apellidos" name="apellidos" value="" />
+										<br/><br/>
+
+										<label for="descripcion">¡Cuéntame algo sobre tí!</label> <br/>
+										<textarea name="descripcion" id="descripcion" cols="40" rows="5"></textarea>
+
+										<br/><br/>
+
+										<label for="foto">Foto</label> <input type="file" name="foto" id="foto" />
+
+										<br/><br/>
+
+										<input name="html" id="html" type="checkbox" value="markup"/>
+										<label for="html">Deseo colaborar escribiendo HTML</label>									
+										<input name="documentacion" id="documentacion" type="checkbox" value="documentacion" />
+										<label for="documentacion">Deseo colaborar investigando documentación</label>
+
+										<br/><br/>
+
+									</fieldset>
+									<br/>
+									<fieldset>
+										<legend>Datos avanzados</legend>
+
+										<br/>
+
+										<label>¿Ordenador propio?</label> <br/>
+										<input name="ordenador" id="negativo" type="radio" value="si" checked="checked"/>
+										<label for="negativo">Sí</label>
+										<br/>
+										<input name="ordenador" id="afirmativo" type="radio" value="no"/>
+										<label for="afirmativo">No</label>
+
+										<br/><br/>
+
+										<label for="software">Selección múltiple con tecla 'ctrl':</label> <br/>
+										<select id="software" name="softtware" multiple="multiple" size="12">
+											<optgroup label="Sistemas Operativos utilizados">
+												<option value="Windows">Windows</option>
+												<option value="Mac">Mac</option>
+												<option value="Linux">Linux</option>
+												<option value="Other">Otro</option>
+											</optgroup>
+											<optgroup label="Navegadores utilizados">
+												<option value="Internet Explorer">Internet Explorer</option>
+												<option value="Firefox">Firefox</option>
+												<option value="Chrome" selected="selected">Chrome</option>
+												<option value="Safari">Safari</option>
+												<option value="Opera">Opera</option>
+												<option value="Other">Otro</option>
+											</optgroup>
+										</select>
+
+										<br/><br/>
+
+										<input type="submit" name="enviar" value="Enviar formulario" />
+										<input type="reset" name="limpiar" value="Volver a formulario inicial por defecto" />
+
+										<br/>
+
+									</fieldset>
+								</form>
+							</td>
+						</tr>
+						
+					</table>
+
+				</td>
+			</tr>
+		</table>
+
+		<table height="200">
+			<tr>
+				<td><p> </p></td>
+			</tr>
+		</table>
+
+		<!-- FOOTER -->
+		<br/>
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th bgcolor="#000"><a href="quienesomos.html"><font face="arial" color="#fff">¿Quiénes somos?</font></a></th>
+				<th bgcolor="#000"><a href="dondestamos.html"><font face="arial" color="#fff">¿Dónde estamos?</font></a></th>
+				<th bgcolor="#000"><a href="contacto.html"><font face="arial" color="#fff">Contacto</font></a></th>
+				<th width="200" bgcolor="#000"><font face="arial" color="#fff">© DAW documentacion</font></th>
+				<th width="100" align="right" bgcolor="#000">
+					<img width="100" src="../images/logo.png" alt="Documentación DAW logo">
+				</th>
+			</tr>
+		</table>
+
+	</body>
+
+</html>

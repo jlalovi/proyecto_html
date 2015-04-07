@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html>
+
+	<head>
+		<title>Documentación DAW XHTML</title>
+		<meta name="author" content="Javier Latorre">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+	</head>
+
+	<body topmargin="0" leftmargin="5%" rightmargin="5%" link="#A11600" alink="#A11600" vlink="#A11600">
+		
+		<!-- ENCABEZADO -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th width="488px" align="left" bgcolor="#ffcc66">
+					<img src="images/encabezado.png" alt="Documentación DAW XHTML 1.0">
+				</th>
+			</tr>
+		</table>
+
+		<!-- MENÚ -->
+		<table height="40" width="100%" cellspacing="0" cellpadding="0" border="5" align="center">
+			<tr>
+				<th bgcolor="#005a9c"><a href="index.html"><font face="arial" color="#fff">Inicio</font></a></th>
+				<th><a href="tema/texto.html"><font face="arial" color="#000">Texto</font></a></th>
+				<th><a href="tema/enlaces.html"><font face="arial" color="#000">Enlaces</font></a></th>
+				<th><a href="tema/listas.html"><font face="arial" color="#000">Listas</font></a></th>
+				<th><a href="tema/imagenes.html"><font face="arial" color="#000">Imágenes</font></a></th>
+				<th><a href="tema/tablas.html"><font face="arial" color="#000">Tablas</font></a></th>
+				<th><a href="tema/formularios.html"><font face="arial" color="#000">Formularios</font></a></th>
+			</tr>
+		</table>
+
+		<!-- MENÚ 2 -->
+		<table width="100%" cellspacing="0" cellpadding="5" border="5">
+			<tr>
+				<th align="left"><a href="#introduccion"><font color="#000">Introducción</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#etiquetasPrincipales"><font color="#000">Etiquetas principales </font><font color="#005B9C">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/tbody&gt;&lt;/html&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#atributosComunes"><font color="#000">Atributos comunes</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#metainformacion"><font color="#000">Metainformación </font><font color="#005B9C">&lt;title&gt;&lt;/title&gt;&lt;meta /&gt;&lt;!DOCTYPE&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#mapaSitio"><font color="#000">Mapa del sitio</font></a></th>
+			</tr>
+		</table>
+
+		<!--SECCIONES-->
+		<table width="100%">
+			<tr>
+				<td>
+
+					<!--Introducción-->
+					<font color="#005B9C"><h2 id="introduccion">Introducción</h2></font>
+					<table width="80%">
+						<tr><th scope="col" align="left">¿Qué es HTML?</th></tr>
+						<tr>
+							<td>
+								<p>Definiéndolo de forma sencilla, <em>"HTML es lo que se utiliza para crear todas las páginas web de Internet"</em>. Más concretamente, HTML es el <em>lenguaje</em> con el que se "<em>escriben</em>" la mayoría de páginas web.</p>
+								<p>Los diseñadores utilizan el lenguaje HTML para crear sus páginas web, los programas que utilizan los diseñadores generan páginas escritas en HTML y los navegadores que utilizamos los usuarios muestran las páginas web después de leer su contenido HTML.</p>
+								<p>Aunque HTML es un lenguaje que utilizan los ordenadores y los programas de diseño, es muy fácil de aprender y escribir por parte de las personas. En realidad, HTML son las siglas de <em>HyperText Markup Language</em> y más adelante se verá el significado de cada una de estas palabras.</p>
+								<p>El lenguaje HTML es un estándar reconocido en todo el mundo y cuyas normas define un organismo sin ánimo de lucro llamado <a href="http://www.w3.org/">World Wide Web Consortium</a>, más conocido como <strong>W3C</strong>. Como se trata de un estándar reconocido por todas las empresas relacionadas con el mundo de Internet, una misma página HTML se visualiza de forma muy similar en cualquier navegador de cualquier sistema operativo.</p>
+								<p>El propio <strong>W3C</strong> define el lenguaje HTML como "<em>un lenguaje reconocido universalmente y que permite publicar información de forma global</em>". Desde su creación, el lenguaje HTML ha pasado de ser un lenguaje utilizado exclusivamente para crear documentos electrónicos a ser un lenguaje que se utiliza en muchas aplicaciones electrónicas como buscadores, tiendas online y banca electrónica.</p>
+							</td>
+						</tr>
+						<tr><th scope="col" align="left">Lenguaje de etiquetas</th></tr>
+						<tr>
+							<td>
+								<p>El proceso de indicar las diferentes partes que componen la información de un Sitio Web se denomina <strong>marcar</strong> (<em>markup</em> en inglés). Cada una de las palabras que se emplean para marcar el inicio y el final de una sección se denominan <strong>etiquetas</strong>.</p>
+								<p>Aunque existen algunas excepciones, en general las etiquetas se indican por pares y se forman de la siguiente manera:</p>
+								<ul>
+									<li>Etiqueta de apertura: carácter <font color="#005B9C"><b>&gt;</b></font>, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter <font color="#005B9C"><b>&lt;</b></font></li>
+									<li>Etiqueta de cierre: carácter <font color="#005B9C"><b>&lt;</b></font>, seguido del carácter <font color="#005B9C"><b>/</b></font>, seguido del nombre de la etiqueta (sin espacios en blanco) y terminado con el carácter <font color="#005B9C"><b>&gt;</b></font></li>
+								</ul>
+								<p>Así, la estructura típica de las etiquetas HTML es:</p>
+								<code>
+									<font color="#005B9C">&lt;nombre_etiqueta&gt;</font> ... <font color="#005B9C">&lt;/nombre_etiqueta&gt;</font>
+								</code>
+								<p>HTML es un <strong>lenguaje de etiquetas</strong> (también llamado <strong>lenguaje de marcado</strong>) y las páginas web habituales están formadas por cientos o miles de pares de etiquetas. De hecho, las letras "ML" de la sigla HTML significan "<em>markup language</em>", que es como se denominan en inglés a los <em>lenguajes de marcado</em>. Además de HTML, existen muchos otros lenguajes de etiquetas como XML, SGML, DocBook y MathML.</p>
+								<p>La principal ventaja de los lenguajes de etiquetas es que son muy sencillos de leer y escribir por parte de las personas y de los sistemas electrónicos. La principal desventaja es que pueden aumentar mucho el tamaño del documento, por lo que en general se utilizan etiquetas con nombres muy cortos.</p>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Etiquetas principales-->
+					<font color="#005B9C"><h2 id="etiquetasPrincipales">Etiquetas principales</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;html&gt;&lt;/html&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="#atributosInternacionalizacion">Internacionalización</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Contiene todo el documento HTML a excepción de la declaración del tipo de documento que se encuenta al principio del mismo.</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;head&gt;&lt;/head&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="#atributosInternacionalizacion">Internacionalización</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">profile</font>: Especifica la URL de un perfil de metadatos.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Define la cabecera del documento y contiene información del mismo (metadatos, scripts, estilos, ubicación de documentos de estilos, título de la página, etc.). La cabecera de un documento puede contener las siguientes etiquetas: <font color="#005B9C">&lt;title&gt;</font> (obligatoria), <font color="#005B9C">&lt;meta&gt;, &lt;link&gt;, &lt;base&gt;, &lt;script&gt; y &lt;style&gt;</font></td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;body&gt;&lt;/body&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="#atributosBasicos">Básicos</a>, <a href="#atributosInternacionalizacion">internacionalización</a> y <a href="#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">text</font>: Especifica el color de texto de toda la página.</p>
+								<p><font color="#00A85C">background</font>: Dirección URL de la imagen que se utilizará como fondo de una página.</p>
+								<p><font color="#00A85C">bgcolor</font>: Especifica el color de fondo de una página.</p>
+								<p><font color="#00A85C">link</font>: Especifica el color de texto de los enlaces aún no visitados.</p>
+								<p><font color="#00A85C">alink</font>: Especifica el color de texto de los enlaces al ser seleccionados.</p>
+								<p><font color="#00A85C">vlink</font>: Especifica el color de texto de los enlaces que han sido visitados.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Define el cuerpo de un documento. Dentro del cuerpo del documento se incluye todo el contenido del mismo, por ej. textos, enlaces, imágenes, tablas, etc.</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<p>El <em>esqueleto</em> de un sitio web vendría definido tal que así:</p>				
+								<code>
+									<p><font color="#005B9C">&lt;html&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;head&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;title&gt;</font>Página web sin ningún contenido<font color="#005B9C">&lt;/title&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/head&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;body&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;...</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/body&gt;</font></p>
+									<p><font color="#005B9C">&lt;/html&gt;</font></p>	
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--ATRIBUTOS COMUNES-->
+					<font color="#005B9C"><h2 id="atributosComunes">Atributos Comunes</h2></font>
+
+					<!--ATRIBUTOS BÁSICOS-->
+					<table width="80%">
+						<tr><th id="atributosBasicos" align="left" scope="col" align="left"><u>ATRIBUTOS BÁSICOS</u></th></tr>
+					</table>
+					<br/>
+					<table width="80%">
+						<tr><td>Los siguientes cuatro atributos básicos se pueden aplicar prácticamente a todas las etiquetas HTML:</td></tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th align="left" scope="col" width="100">Atributo</th>
+							<th align="left" scope="col">Descripción</th>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">id = "texto"</font></td>
+							<td>Establece un identificador único a cada elemento dentro de una página HTML</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">class = "texto"</font></td>
+							<td>Establece la clase CSS que se aplica a los estilos del elemento</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">style = "texto"</font></td>
+							<td>Establece de forma directa los estilos CSS de un elemento</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">title = "texto"</font></td>
+							<td>Establece el título a un elemento (mejora la accesibilidad y los navegadores lo muestran cuando el usuario pasa el ratón por encima del elemento)</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="80%">
+						<tr><td>La mayoría de páginas web actuales utilizan los atributos <font color="#00A85C">id</font> y <font color="#00A85C">class</font> de forma masiva. Sin embargo, estos atributos sólo son realmente útiles cuando se trabaja con CSS y con Javascript.</td></tr>
+					</table>
+					<br/>	
+					<table width="80%">
+						<tr><td>Respecto al valor de los atributos <font color="#00A85C">id</font> y <font color="#00A85C">class</font>, sólo pueden contener guiones medios (-), guiones bajos (_), letras y/o números, pero no pueden empezar por números. Además, los navegadores distinguen mayúsculas de minúsculas y no se recomienda utilizar letras como ñ y acentos, ya que no es seguro que funcionen correctamente en todas las versiones de todos los navegadores.</td></tr>
+					</table>
+					<br/>
+
+					<!--ATRIBUTOS DE INTERNACIONALIZACIÓN-->
+					<table width="80%">
+						<tr><th id="atributosInternacionalizacion" align="left" scope="col" align="left"><u>ATRIBUTOS DE INTERNACIONALIZACIÓN</u></th></tr>
+					</table>
+					<br/>
+					<table width="80%">
+						<tr><td>Estos atributos son útiles para aquellas páginas que muestran sus contenidos en varios idiomas y para aquellas que quieren indicar de forma explítica el idioma de sus contenidos:</td></tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th align="left" scope="col" width="100">Atributo</th>
+							<th align="left" scope="col">Descripción</th>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">lang = "codigo de idioma"</font></td>
+							<td>Indica el idioma del elemento mediante un código predefinido</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">xml:lang = "codigo de idioma"</font></td>
+							<td>Indica el idioma del elemento mediante un código predefinido</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">dir</font></td>
+							<td>Indica la dirección del texto (útil para los idiomas que escriben de derecha a izquierda)</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="80%">
+						<tr><td>En las páginas XHTML, el atributo <font color="#00A85C">xml:lang</font> tiene más prioridad que <font color="#00A85C">lang</font> y es obligatorio incluirlo siempre que se incluye el atributo <font color="#00A85C">lang</font>. Los idiomas se indican mediante un código estandarizado (<font color="#00A85C">es</font> para español, <font color="#00A85C">en</font> para inglés, etc.).</td></tr>
+					</table>
+					<br/>	
+					<table width="80%">
+						<tr><td>Como la palabra <font color="#00A85C">internacionalización</font> es muy larga, se suele sustituir por la abreviatura <font color="#00A85C">i18n</font> (el número 18 se refiere al número de letras que existen entre la letra 'i' y la letra 'n' de la palabra internacionalización).</td></tr>
+					</table>
+					<br/>
+
+					<!--ATRIBUTOS DE EVENTOS-->
+					<table width="80%">
+						<tr><th id="atributosEventos" align="left" scope="col" align="left"><u>ATRIBUTOS DE EVENTOS</u></th></tr>
+					</table>
+					<br/>
+					<table width="80%">
+						<tr><td>Estos atributos sólo se utilizan en las páginas web que incluyen código JavaScript para realizar acciones dinámicas sobre los elementos de la página. Cada vez que el usuario pulsa una tecla, mueve su ratón o pulsa cualquier botón del ratón, se produce un evento dentro del navegador. Utilizando JavaScript y los siguientes atributos, es posible responder de forma adecuada a cada evento.</td></tr>
+					</table>
+					<br/>
+					<table width="70%" cellpadding="5" border="1">
+						<tr>
+							<th align="left" scope="col" width="100">Atributo</th>
+							<th align="left" scope="col">Descripción</th>
+							<th align="left" scope="col">Elementos que pueden usarlo</th>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onblur</font></td>
+							<td>Deseleccionar el elemento</td>
+							<td><font color="#005B9C"> &lt;button&gt;, &lt;input&gt;, &lt;label&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;body&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onchange</font></td>
+							<td>Deseleccionar un elemento que se ha modificado</td>
+							<td><font color="#005B9C">&lt;input&gt;, &lt;select&gt;, &lt;textareg&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onclick</font></td>
+							<td>Pinchar y soltar el ratón</td>
+							<td>Todos los elementos</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">ondblclick</font></td>
+							<td>Pinchar dos veces seguidas con el ratón</td>
+							<td>Todos los elementos</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onfocus</font></td>
+							<td>Seleccionar un elemento</td>
+							<td><font color="#005B9C"> &lt;button&gt;, &lt;input&gt;, &lt;label&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;body&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onkeydown</font></td>
+							<td>Pulsar una tecla (sin soltar)</td>
+							<td>Elementos de formulario y <font color="#005B9C"> &lt;body&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onkeypress</font></td>
+							<td>Pulsar una tecla</td>
+							<td>Elementos de formulario y <font color="#005B9C"> &lt;body&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onkeyup</font></td>
+							<td>Soltar una tecla pulsada</td>
+							<td>Elementos de formulario y <font color="#005B9C"> &lt;body&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onload</font></td>
+							<td>La página se ha cargado completamente</td>
+							<td><font color="#005B9C">&lt;body&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onmousedown</font></td>
+							<td>Pulsar (sin soltar) un botón del ratón</td>
+							<td>Todos los elementos</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onmousemove</font></td>
+							<td>Mover el ratón</td>
+							<td>Todos los elementos</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onmouseout</font></td>
+							<td>El ratón "sale" del elemento (pasa por encima de otro elemento)</td>
+							<td>Todos los elementos</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onmouseover</font></td>
+							<td>El ratón "entra" en el elemento (pasa por encima del elemento)</td>
+							<td>Todos los elementos</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onmouseup</font></td>
+							<td>Soltar el botón que estaba pulsado en el ratón</td>
+							<td>Todos los elementos</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onreset</font></td>
+							<td>Inicializar el formulario (borrar todos sus datos)</td>
+							<td><font color="#005B9C"> &lt;form&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onresize</font></td>
+							<td>Se ha modificado el tamaño de la ventana del navegador</td>
+							<td><font color="#005B9C"> &lt;body&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onselect</font></td>
+							<td>Seleccionar un texto</td>
+							<td><font color="#005B9C">&lt;input&gt;, &lt;textarea&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onsubmit</font></td>
+							<td>Enviar el formulario</td>
+							<td><font color="#005B9C"> &lt;form&gt;</font></td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onunload</font></td>
+							<td>Se abandona la página (por ejemplo al cerrar el navegador)</td>
+							<td><font color="#005B9C"> &lt;body&gt;</font></td>
+						</tr>
+					</table>
+					<br/>
+
+					<!--ATRIBUTOS DE FOCO-->
+					<table width="80%">
+						<tr><th id="atributosFoco" align="left" scope="col" align="left"><u>ATRIBUTOS DE FOCO</u></th></tr>
+					</table>
+					<br/>
+					<table width="80%">
+						<tr><td>Cuando el usuario selecciona un elemento en una aplicación, se dice que "<em>el elemento tiene el foco del programa</em>". Si por ejemplo un usuario pincha con su ratón sobre un cuadro de texto y comienza a escribir, ese cuadro de texto tiene el foco del programa, llamado "<em>focus</em>" en inglés. Si el usuario selecciona después otro elemento, el elemento original pierde el foco y el nuevo elemento es el que tiene el foco del programa.</td></tr>
+					</table>
+					<br/>	
+					<table width="80%">
+						<tr><td>Los elementos de las páginas web también pueden obtener el foco de la aplicación (en este caso, el foco del navegador) y HTML define algunos atributos específicos para controlar cómo se seleccionan los elementos.</td></tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th align="left" scope="col" width="100">Atributo</th>
+							<th align="left" scope="col">Descripción</th>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">accesskey = "letra"</font></td>
+							<td>Establece una tecla de acceso rápido a un elemento HTML</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">tabindex = "numero"</font></td>
+							<td>Establece la posición del elemento en el orden de tabulación de la página. Su valor debe estar comprendido entre 0 y 32.767</td>
+						</tr>
+						<tr>
+							<td><font color="#00A85C">onfocus, onblur</font></td>
+							<td>Controlan los eventos JavaScript que se ejecutan cuando el elemento obtiene o pierde el foco</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="80%">
+						<tr><td>Cuando se pulsa repetidamente la tecla del tabulador sobre una página web, el navegador selecciona de forma alternativa todos los elementos de la página que se pueden seleccionar (principalmente los enlaces y los elementos de formulario). El atributo <font color="#00A85C">tabindex</font> permite alterar el orden en el que se seleccionan los elementos, por lo que es muy útil cuando se quiere controlar de forma precisa cómo se seleccionan los campos de un formulario complejo.</td></tr>
+					</table>
+					<br/>	
+					<table width="80%">
+						<tr><td>Por su parte, el atributo <font color="#00A85C">accesskey</font> permite establecer una tecla para acceder de forma rápida a cualquier elemento. Aunque la tecla de acceso rápido se establece mediante HTML, la combinación de teclas necesarias para activar ese acceso rápido depende del navegador. En el navegador Internet Explorer se pulsa la tecla ALT + la tecla definida; en el navegador Firefox se pulsa Alt + Shift + la tecla definida; en el navegador Opera se pulsa Shift + Esc + la tecla definida; en el navegador Safari se pulsa Ctrl + la tecla definida.</td></tr>
+					</table>
+					<br/>
+
+					<table width="80%">
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Metainformación-->
+					<font color="#005B9C"><h2 id="metainformacion">Metainformación</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;title&gt;&lt;/title&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="#atributosInternacionalizacion">Internacionalización</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Define el título del documento HTML</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;meta /&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="#atributosInternacionalizacion">Internacionalización</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">name = "texto"</font>: El nombre de la propiedad que se define (no existe una lista oficial de propiedades).</p>
+								<p><font color="#00A85C">content = "texto"</font>: El valor de la propiedad definida (no existe una lista de valores permitidos).</p>
+								<p><font color="#00A85C">http-equiv = "texto"</font>: En ocasiones, reemplaza al atributo “name” y lo emplean los servidores para adaptar sus respuestas al documento.</p>
+								<p><font color="#00A85C">scheme = "texto"</font>: Indica el esquema que se debe emplear para interpretar el valor de la propiedad.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>
+								<p>Aunque no existe una lista oficial con los metadatos que se pueden definir, algunos de ellos se utilizan en tantas páginas que se han convertido prácticamente en un estándar. A continuación se muestran los metadatos más utilizados:</p>
+								<p><font color="#005B9C">&lt;meta <font color="#00A85C">name="author" content="Juan Pérez"</font> /&gt;</font>: Define el autor del documento.</p>
+								<p><font color="#005B9C">&lt;meta <font color="#00A85C">name="generator" content="WordPress 2.8.4"</font> /&gt;</font>: Definir el programa con el que se ha creado.</p>
+								<p><font color="#005B9C">&lt;meta <font color="#00A85C">http-equiv="Content-Type" content="text/html; charset=UTF-8"</font> /&gt;</font>: Definir la codificación de caracteres del documento.</p>
+								<p><font color="#005B9C">&lt;meta <font color="#00A85C">name="copyright" content="librosweb.es"</font> /&gt;</font>: Definir el copyright del documento.</p>
+								<p><font color="#005B9C">&lt;meta <font color="#00A85C">name="robots" content="index, follow"</font> /&gt;</font>: Definir el comportamiento de los buscadores.</p>
+								<p><font color="#005B9C">&lt;meta <font color="#00A85C">name="keywords" content="diseño, css, hojas de estilos, web, html"</font> /&gt;</font>: Definir las palabras clave que definen el contenido del documento.</p>
+								<p><font color="#005B9C">&lt;meta <font color="#00A85C">name="description" content="Artículos sobre diseño web, usabilidad y accesibilidad"</font> /&gt;</font>: Definir una breve descripción del sitio.</p>
+							</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="100" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;!DOCTYPE&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>El conjunto de normas, obligaciones y restricciones que se deben seguir al crear un documento de un determinado tipo. En el curso de 1º DAW se ha optado por el 'XHTML 1.0 Frameset' que se expresa así: 
+							<p><font color="#005B9C">&lt;!DOCTYPE <font color="00A85C">html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"</font>&gt;</font></p></td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<p>Un ejemplo aplicando estos nuevos contenidos, serían los que estoy utilizando en este mismo sitio web:</p>				
+								<code>
+									<p><font color="#005B9C">&lt;!DOCTYPE <font color="00A85C">html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"</font>&gt;</font></p>
+									<p><font color="#005B9C">&lt;html&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;head&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;title&gt;</font>Página web sin ningún contenido<font color="#005B9C">&lt;/title&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;meta <font color="00A85C">name="author" content="Javier Latorre"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;meta <font color="00A85C">http-equiv="Content-Type" content="text/html;charset=UTF-8"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/head&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;body&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;...</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/body&gt;</font></p>
+									<p><font color="#005B9C">&lt;/html&gt;</font></p>	
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Mapa del sitio-->
+					<font color="#005B9C"><h2 id="mapaSitio">Mapa del sitio</h2></font>
+					<table width="80%">
+						<tr><th scope="col" colspan="3" align="left"><font color="#005B9C">MENÚ PRINCIPAL</font></th></tr>
+						<!--Inicio-->
+						<tr>
+							<td width="10"></td>
+							<th scope="col" align="left" colspan="2"><a href="index.html"><font color="#000">Inicio</font></a></th>
+						</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left" colspan="2"><a href="index.html#introduccion"><font color="#000">Introducción</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left" colspan="2"><a href="index.html#etiquetasPrincipales"><font color="#000">Etiquetas principales </font></font><font color="#005B9C">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/tbody&gt;&lt;/html&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left" colspan="2"><a href="index.html#atributosComunes"><font color="#000">Atributos comunes</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left" colspan="2"><a href="index.html#metainformacion"><font color="#000">Metainformación </font><font color="#005B9C">&lt;title&gt;&lt;/title&gt;&lt;meta&gt;&lt;/meta&gt;&lt;!DOCTYPE&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left" colspan="2"><a href="index.html#mapaSitio"><font color="#000">Mapa del sitio</font></a></td>
+							</tr>
+						<!--Texto-->
+						<tr>
+							<td width="10"></td>
+							<th scope="col" align="left" colspan="2"><a href="tema/texto.html"><font color="#000">Texto</font></a></th>
+						</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#parrafo"><font color="#000">Párrafo </font><font color="#005B9C">&lt;p&gt;&lt;/p&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#secciones"><font color="#000">Secciones </font><font color="#005B9C">&lt;h1&gt;&lt;/h1&gt; / &lt;h2&gt;&lt;/h2&gt; / &lt;h3&gt;&lt;/h3&gt; / &lt;h4&gt;&lt;/h4&gt; / &lt;h5&gt;&lt;/h5&gt; / &lt;h6&gt;&lt;/h6&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#negrita"><font color="#000">Negrita </font><font color="#005B9C">&lt;strong&gt;&lt;/strong&gt; / &lt;b&gt;&lt;/b&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#cursiva"><font color="#000">Cursiva </font><font color="#005B9C">&lt;em&gt;&lt;/em&gt; / &lt;i&gt;&lt;/i&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#insercion"><font color="#000">Inserción </font><font color="#005B9C">&lt;ins&gt;&lt;/ins&gt; / &lt;u&gt;&lt;/u&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#tachado"><font color="#000">Tachado </font><font color="#005B9C">&lt;del&gt;&lt;/del&gt; / &lt;s&gt;&lt;/s&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#citaDeTexto"><font color="#000">Cita de texto </font><font color="#005B9C">&lt;blockquote&gt;&lt;/blockquote&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#abreviatura"><font color="#000">Abreviatura </font><font color="#005B9C">&lt;abbr&gt;&lt;/abbr&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#acronimo"><font color="#000">Acrónimo </font><font color="#005B9C">&lt;acronym&gt;&lt;/acronym&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#definicion"><font color="#000">Definición </font><font color="#005B9C">&lt;dfn&gt;&lt;/dfn&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#referencia"><font color="#000">Referencia </font><font color="#005B9C">&lt;cite&gt;&lt;/cite&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#saltoDeLinea"><font color="#000">Salto de línea </font><font color="#005B9C">&lt;br&gt;&lt;/br&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#preformateado"><font color="#000">Preformateado </font><font color="#005B9C">&lt;pre&gt;&lt;/pre&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#codigoFuente"><font color="#000">Código fuente </font><font color="#005B9C">&lt;code&gt;&lt;/code&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#superindice"><font color="#000">Superíndice </font><font color="#005B9C">&lt;sup&gt;&lt;/sup&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#subindice"><font color="#000">Subíndice </font><font color="#005B9C">&lt;sub&gt;&lt;/sub&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#fuente"><font color="#000">Fuente </font><font color="#005B9C">&lt;font&gt;&lt;/font&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/texto.html#caracteresEspeciales"><font color="#000">Codificación de caracteres especiales</font></a></td>
+							</tr>
+						<!--Enlaces-->
+						<tr>
+							<td width="10"></td>
+							<th scope="col" align="left" colspan="2"><a href="tema/enlaces.html"><font color="#000">Enlaces</font></a></th>
+						</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/enlaces.html#enlacesBasicos"><font color="#000">Enlaces básicos </font><font color="#005B9C">&lt;a&gt;&lt;/a&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/enlaces.html#enlacesAvanzados"><font color="#000">Enlaces avanzados </font><font color="#005B9C">&lt;a&gt;&lt;/a&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/enlaces.html#scripts"><font color="#000">Scripts </font><font color="#005B9C">&lt;script&gt;&lt;/script&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/enlaces.html#links"><font color="#000">Links </font><font color="#005B9C">&lt;link&gt;&lt;/link&gt;</font></a></td>
+							</tr>
+						<!--Listas-->
+						<tr>
+							<td width="10"></td>
+							<th scope="col" align="left" colspan="2"><a href="tema/listas.html"><font color="#000">Listas</font></a></th>
+						</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/listas.html#listasOrdenadas"><font color="#000">Listas ordenadas </font><font color="#005B9C">&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/listas.html#listasNoOrdenadas"><font color="#000">Listas No ordenadas </font><font color="#005B9C">&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/listas.html#listasDefinicion"><font color="#000">Listas de definición </font><font color="#005B9C">&lt;dl&gt;&lt;dt&gt;&lt;dd&gt;&lt;/dd&gt;&lt;/dt&gt;&lt;/dl&gt;</font></a></td>
+							</tr>
+						<!--Imagenes-->
+						<tr>
+							<td width="10"></td>
+							<th scope="col" align="left" colspan="2"><a href="tema/imagenes.html"><font color="#000">Imágenes</font></a></th>
+						</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/imagenes.html#imagenes"><font color="#000">Imágenes </font><font color="#005B9C">&lt;img /&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/imagenes.html#mapaImagenes"><font color="#000">Mapa de imágenes </font><font color="#005B9C">&lt;map&gt;&lt;area&gt;&lt;/area&gt;&lt;/map&gt;</font></a></td>
+							</tr>
+						<!--Tablas-->
+						<tr>
+							<td width="10"></td>
+							<th scope="col" align="left" colspan="2"><a href="tema/tablas.html"><font color="#000">Tablas</font></a></th>
+						</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/tablas.html#tablasBasicas"><font color="#000">Tablas básicas </font><font color="#005B9C">&lt;table&gt;&lt;caption&gt;&lt;/caption&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/tablas.html#tablasAvanzadas"><font color="#000">Tablas avanzadas </font><font color="#005B9C">&lt;thead&gt;&lt;/thead&gt;&lt;tfoot&gt;&lt;/tfoot&gt;&lt;tbody&gt;&lt;/tbody&gt;</font></a></td>
+							</tr>
+						<!--Formularios-->
+						<tr>
+							<td width="10"></td>
+							<th scope="col" align="left" colspan="2"><a href="tema/formularios.html"><font color="#000">Formularios</font></a></th>
+						</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/formularios.html#tipoInputs"><font color="#000">Inputs </font><font color="#005B9C">&lt;label&gt;&lt;/label&gt; &lt;input /&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/formularios.html#textarea"><font color="#000">Textarea </font><font color="#005B9C">&lt;label&gt;&lt;/label&gt; &lt;textarea&gt;&lt;/textarea&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/formularios.html#listaDesplegable"><font color="#000">Lista desplegable </font><font color="#005B9C">&lt;label&gt; &lt;/label&gt;&lt;select&gt;&lt;optgroup&gt;&lt;option&gt;&lt;/option&gt;&lt;/optgroup&gt;&lt;/select&gt;</font></a></td>
+							</tr>
+							<tr>
+								<td width="10"></td>
+								<td width="10"></td>
+								<td align="left"><a href="tema/formularios.html#formularioCompleto"><font color="#000">Formulario completo </font><font color="#005B9C">&lt;form&gt;&lt;legend&gt;&lt;/legend&gt;&lt;fieldset&gt; ... &lt;/fieldset&gt;&lt;/form&gt;</font></a></td>
+							</tr>
+					</table>
+					<table width="80%">
+						<tr><th colspan="2" align="left"><font color="#005B9C">PIE DE PÁGINA</font></th></tr>
+						<tr>
+							<td width="10"></td>
+							<th align="left"><a href="info/quienesomos.html"><font color="#000">¿Quiénes somos?</font></a></th>
+						</tr>
+						<tr>
+							<td width="10"></td>
+							<th align="left"><a href="info/dondestamos.html"><font color="#000">¿Dónde estamos?</font></a></th>
+						</tr>
+						<tr>
+							<td width="10"></td>
+							<th align="left"><a href="info/contacto.html"><font color="#000">Contacto</font></a></th>
+						</tr>
+					</table>	
+					<table width="80%">
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+		</table> <!-- fin de SECCIONES -->
+
+		<table height="200">
+			<tr>
+				<td><p> </p></td>
+			</tr>
+		</table>
+
+		<!-- FOOTER -->
+		<br/>
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th bgcolor="#000"><a href="info/quienesomos.html"><font face="arial" color="#fff">¿Quiénes somos?</font></a></th>
+				<th bgcolor="#000"><a href="info/dondestamos.html"><font face="arial" color="#fff">¿Dónde estamos?</font></a></th>
+				<th bgcolor="#000"><a href="info/contacto.html"><font face="arial" color="#fff">Contacto</font></a></th>
+				<th width="200" bgcolor="#000"><font face="arial" color="#fff">© DAW documentacion</font></th>
+				<th width="100" align="right" bgcolor="#000">
+					<img width="100" src="images/logo.png" alt="Documentación DAW logo">
+				</th>
+			</tr>
+		</table>
+
+	</body>
+
+</html>

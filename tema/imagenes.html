@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html>
+
+	<head>
+		<title>Documentación DAW XHTML</title>
+		<meta name="author" content="Javier Latorre">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
+	</head>
+
+	<body topmargin="0" leftmargin="5%" rightmargin="5%" link="#A11600" alink="#A11600" vlink="#A11600">
+				
+		<!-- ENCABEZADO -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th width="488px" align="left" bgcolor="#ffcc66">
+					<img src="../images/encabezado.png" alt="Documentación DAW XHTML 1.0">
+				</th>
+			</tr>
+		</table>
+
+		<!-- MENÚ -->
+		<table height="40" width="100%" cellspacing="0" cellpadding="0" border="5">
+			<tr>
+				<th><a href="../index.html"><font face="arial" color="#000">Inicio</font></a></th>
+				<th><a href="texto.html"><font face="arial" color="#000">Texto</font></a></th>
+				<th><a href="enlaces.html"><font face="arial" color="#000">Enlaces</font></a></th>
+				<th><a href="listas.html"><font face="arial" color="#000">Listas</font></a></th>
+				<th bgcolor="#005a9c"><a href="imagenes.html"><font face="arial" color="#fff">Imágenes</font></a></th>
+				<th><a href="tablas.html"><font face="arial" color="#000">Tablas</font></a></th>
+				<th><a href="formularios.html"><font face="arial" color="#000">Formularios</font></a></th>
+			</tr>
+		</table>
+
+		<!-- MENÚ 2 -->
+		<table width="100%" cellspacing="0" cellpadding="5" border="5">
+			<tr>
+				<th align="left"><a href="#imagenes"><font color="#000">Imágenes </font><font color="#005B9C">&lt;img /&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#mapaImagenes"><font color="#000">Mapa de imágenes </font><font color="#005B9C">&lt;map&gt;&lt;area&gt;&lt;/area&gt;&lt;/map&gt;</font></a></th>
+			</tr>
+		</table>
+
+		<!--SECCIONES-->
+		<table width="100%">
+			<tr>
+				<td>
+					<!--Imágenes-->
+					<font color="#005B9C"><h2 id="imagenes">Imágenes</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;img /&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">src = "url"</font>: Indica la URL de la imagen que se muestra.</p>
+								<p><font color="#00A85C">alt = "texto"</font>: Descripción corta de la imagen.</p>
+								<p><font color="#00A85C">height = "unidad_de_medida"</font>: Indica la altura con la que se debe mostrar la imagen (no es obligatorio que coincida con la altura original de la imagen).</p>
+								<p><font color="#00A85C">width = "unidad_de_medida"</font>: Indica la anchura con la que se debe mostrar la imagen (no es obligatorio que coincida con la anchura original de la imagen).</p>
+								<p><font color="#00A85C">usemap = "#nombre"</font>: Si una imagen utiliza un mapa de imagen, debe indicarlo mediante este atributo. El valor del atributo debe ser el <font color="#00A85C">name</font> del mapa de imagen definido en otra parte del mismo documento HTML. Ver siguiente apartado para visualizar ejemplo.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea y etiqueta vacía</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para incluir imágenes en los documentos</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplos:</h3>
+
+								<h4><u>Imagen con unidades de medida por defecto</u></h4>
+								<p>Etiquetar una imagen sin indicar las medidas en <font color="#00A85C">width</font> o <font color="#00A85C">height</font>, utiliza sus medidas originales en pixeles. Las medidas en pixeles son <strong>fijas</strong>. Esto quiere decir que independientemente del tamaño del dispositivo donde se visualizará la imagen, siempre ocupará el mismo número de píxeles.</p>
+								<img src="../images/logo.png" alt="Documentación DAW logo">
+								<h4>Código</h4>			
+								<code>
+									<p><font color="#005B9C">&lt;img <font color="#00A85C">src="../images/logo.png" alt="Documentación DAW logo"</font>&gt;</font></p>
+								</code>
+
+								<h4><u>Imagen con unidades de medida en píxeles</u></h4>
+								<p>Las medidas en pixeles son <strong>fijas</strong>. Esto quiere decir que independientemente del tamaño del dispositivo donde se visualizará la imagen, siempre ocupará el mismo número de píxeles. Si se utiliza sólo una de los atributos <font color="#00A85C">width</font> o <font color="#00A85C">height</font>, el otro atributo tendrá el tamaño proporcional. Sin embargo, si se especifican los dos atributos, habría que tener cuidado para dar valores que no deformasen la imagen:</p>
+								<img width="100px" src="../images/logo.png" alt="Documentación DAW logo"><img width="100px" height="50px" src="../images/logo.png" alt="Documentación DAW logo">
+								<h4>Código</h4>			
+								<code>
+									<p><font color="#005B9C">&lt;img <font color="#00A85C">src="../images/logo.png" alt="Documentación DAW logo"</font>&gt;</font></p>
+								</code>
+
+								<h4><u>Imagen con unidades de medida en '%'</u></h4>
+								<p>Las medidas en '%' son <strong>dinámicas</strong>. Esto quiere decir que el tamaño de la imagen dependerá del dispositivo donde se visualizará la imagen, ocupará la proporción del tamaño del contenedor en el que esté encapsulada la imagen. Por ejemplo, en este caso, las imágenes de ejemplo están encapsuladas en una tabla que ocupa el 80% del 90% (100% - 5% x 2 de los margenes izquierdo y derecho) del ancho del sitio web al completo, y estas imágenes, ocupan un 50% de ese 80% del 90%. Fácil, ¿verdad? Aunque parezca mentira, te habituarás a esto. <strong>Prueba a modificar el tamaño de la ventana</strong> para ver el efecto dinámico.</p>
+								<p><img width="50%" src="../images/inspiracion_encabezado.png" alt="Inspiración del encabezado del sitio web"></p>
+								<p><img width="50%" src="../images/encabezado.png" alt="Encabezado del sitio web"></p>
+								<h4>Código</h4>			
+								<code>
+									<p><font color="#005B9C">&lt;img <font color="#00A85C">width="50%" src="../images/inspiracion_encabezado.png" alt="Inspiración del encabezado del sitio web"</font>&gt;</font><font color="#005B9C">&lt;img</p>
+									<p><font color="#005B9C">&lt;img <font color="#00A85C">width="50%" src="../images/encabezado.png" alt="Encabezado del sitio web"</font>&gt;</font><font color="#005B9C">&lt;img</p>
+								</code>
+								
+
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Mapa de imágenes-->
+					<font color="#005B9C"><h2 id="mapaImagenes">Mapa de imágenes</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;map&gt;&lt;/map&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">name = "texto"</font>: Nombre que identifica de forma única al mapa definido (es obligatorio indicar un nombre único)</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque y en línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir mapas de imagen</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;area&gt;&lt;/area&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a>, <a href="../index.html#atributosEventos">eventos</a> y <a href="../index.html#atributosFoco">foco</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">name = "texto"</font>: Nombre que identifica de forma única al mapa definido (es obligatorio indicar un nombre único). Ver atributo <font color="#00A85C">usemap</font> de la etiqueta <font color="#005B9C">&lt;img /&gt;</font>.</p>
+								<p><font color="#00A85C">nohref = "nohref"</font>: Nombre que identifica de forma única al mapa definido (es obligatorio indicar un nombre único)</p>
+								<p><font color="#00A85C">shape = "rect | circle | poly | default"</font>: Indica el tipo de área que se define (rectangular, circular, poligonal o parte de la imagen no seleccionada con el área que acupen los anteriores).</p>
+								<p><font color="#00A85C">coords = "lista de números"</font>: Se trata de una lista de números separados por comas que representan las coordenadas del área. Rectangular = X1,Y1,X2,Y2 (coordenadas X e Y del vértice superior izquierdo y coordenadas X e Y del vértice inferior derecho). Circular = X1,Y1,R (coordenadas X e Y del centro y radio del círculo). Poligonal = X1,Y1,X2,Y2,...,XnYn (coordenadas de los vértices del polígono. Si las últimas coordenadas no son iguales que las primeras, se cierra automáticamente el polígono uniendo ambos vértices)</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Etiqueta vacía</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir las distintas áreas que forman un mapa de imagen</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+
+								<h4><u>Visualización</u></h4>
+								<img src="../images/figuras_geometricas.jpg" alt="Tres figuras geométricas. Un cuadrado, un triángulo y un círculo." usemap="#figuras" />
+								<map name="figuras">
+									<area shape="rect" coords="40,25,215,200" href="http://es.wikipedia.org/wiki/Cuadrado" />
+									<area shape="circle" coords="560,110,100" href="http://es.wikipedia.org/wiki/C%C3%ADrculo" />
+									<area shape="polygon" coords="345,20,238,200,450,200" href="http://es.wikipedia.org/wiki/Tri%C3%A1ngulo" />
+									<area shape="default" nohref="nohref" />
+								</map>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;img <font color="#00A85C">src="../images/figuras_geometricas.jpg" alt="Tres figuras geométricas. Un cuadrado, un triángulo y un círculo." usemap="#figuras"</font>&gt;</font></p>
+									<p><font color="#005B9C">&lt;map&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;area <font color="#00A85C">shape="rect" coords="40,25,215,200" href="http://es.wikipedia.org/wiki/Cuadrado"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;area <font color="#00A85C">shape="circle" coords="560,110,100" href="http://es.wikipedia.org/wiki/C%C3%ADrculo"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;area <font color="#00A85C">shape="polygon" coords="345,20,238,200,450,200" href="http://es.wikipedia.org/wiki/Tri%C3%A1ngulo"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;area <font color="#00A85C">shape="default" nohref="nohref"</font>&gt;</font></p>
+									<p><font color="#005B9C">&lt;/map&gt;</font></p>
+								</code>						
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+		</table> <!-- fin de SECCIONES -->
+
+		<table height="200">
+			<tr>
+				<td><p> </p></td>
+			</tr>
+		</table>
+
+		<!-- FOOTER -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th bgcolor="#000"><a href="../info/quienesomos.html"><font face="arial" color="#fff">¿Quiénes somos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/dondestamos.html"><font face="arial" color="#fff">¿Dónde estamos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/contacto.html"><font face="arial" color="#fff">Contacto</font></a></th>
+				<th width="200" bgcolor="#000"><font face="arial" color="#fff">© DAW documentacion</font></th>
+				<th width="100" align="right" bgcolor="#000">
+					<img width="100" src="../images/logo.png" alt="Documentación DAW logo">
+				</th>
+			</tr>
+		</table>
+
+	</body>
+
+</html>

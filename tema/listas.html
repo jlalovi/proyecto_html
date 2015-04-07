@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html>
+
+	<head>
+		<title>Documentación DAW XHTML</title>
+		<meta name="author" content="Javier Latorre">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
+	</head>
+
+	<body topmargin="0" leftmargin="5%" rightmargin="5%" link="#A11600" alink="#A11600" vlink="#A11600">
+				
+		<!-- ENCABEZADO -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th width="488px" align="left" bgcolor="#ffcc66">
+					<img src="../images/encabezado.png" alt="Documentación DAW XHTML 1.0">
+				</th>
+			</tr>
+		</table>
+
+		<!-- MENÚ -->
+		<table height="40" width="100%" cellspacing="0" cellpadding="0" border="5">
+			<tr>
+				<th><a href="../index.html"><font face="arial" color="#000">Inicio</font></a></th>
+				<th><a href="texto.html"><font face="arial" color="#000">Texto</font></a></th>
+				<th><a href="enlaces.html"><font face="arial" color="#000">Enlaces</font></a></th>
+				<th bgcolor="#005a9c"><a href="listas.html"><font face="arial" color="#fff">Listas</font></a></th>
+				<th><a href="imagenes.html"><font face="arial" color="#000">Imágenes</font></a></th>
+				<th><a href="tablas.html"><font face="arial" color="#000">Tablas</font></a></th>
+				<th><a href="formularios.html"><font face="arial" color="#000">Formularios</font></a></th>
+			</tr>
+		</table>
+
+		<!-- MENÚ 2 -->
+		<table width="100%" cellspacing="0" cellpadding="5" border="5">
+			<tr>
+				<th align="left"><a href="#listasOrdenadas"><font color="#000">Listas ordenadas </font><font color="#005B9C">&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#listasNoOrdenadas"><font color="#000">Listas No ordenadas </font><font color="#005B9C">&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#listasDefinicion"><font color="#000">Listas de definición </font><font color="#005B9C">&lt;dl&gt;&lt;dt&gt;&lt;dd&gt;&lt;/dd&gt;&lt;/dt&gt;&lt;/dl&gt;</font></a></th>
+			</tr>
+		</table>
+
+		<!--SECCIONES-->
+		<table width="100%">
+			<tr>
+				<td>
+					<!--Listas ordenadas-->
+					<font color="#005B9C"><h2 id="listasOrdenadas">Listas ordenadas</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;ol&gt;&lt;/ol&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">type = "tipo_de_marcador"</font>: Indica el tipo de marcador de la lista ordenada. El valor del tipo de marcador puede ser: <font color="#00A85C">"1"</font> (números naturales, que son los que aparecen por defecto si no se pone valor), <font color="#00A85C">"A"</font> (Letras mayúsculas), <font color="#00A85C">"a"</font> (Letras minúculas), <font color="#00A85C">"I"</font> (Números romanos mayúsculos) o <font color="#00A85C">"i"</font> (Números romanos minúsculos).</font></p>
+								<p><font color="#00A85C">start = "número"</font>: Especifica el valor del primer objeto de una lista.</font></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir listas ordenadas</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;li&gt;&lt;/li&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">type = "tipo_de_marcador"</font>: Indica el tipo de marcador de la lista actual. El valor del tipo de marcador puede ser: <font color="#00A85C">"1"</font> (números naturales), <font color="#00A85C">"A"</font> (Letras mayúsculas), <font color="#00A85C">"a"</font> (Letras minúculas), <font color="#00A85C">"I"</font> (Números romanos mayúsculos), <font color="#00A85C">"i"</font> (Números romanos minúsculos)</font>, <font color="#00A85C">"disc"</font> (Círculo con relleno), <font color="#00A85C">"circle"</font> (Círculo vacío) o <font color="#00A85C">"square"</font> (Cuadrado).</font></p>
+								<p><font color="#00A85C">value = "número"</font>: Especifica el valor del objeto de la lista atual.</font></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir los elementos de las listas (ordenadas y no ordenadas)</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplos:</h3>
+
+								<h4><u>Visualización</u></h4>
+								<ol type = "A">
+									<li>Primer elemento lista ordenada tipo "A"</li>
+									<li>Segundo elemento lista ordenada tipo "A"</li>
+									<li>Tercer elemento lista ordenada tipo "A"</li>
+								</ol>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;ol <font color="#00A85C">type = "A"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Primer elemento lista ordenada tipo "A"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Segundo elemento lista ordenada tipo "A"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Tercer elemento lista ordenada tipo "A"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p><font color="#005B9C">&lt;/ol&gt;</font></p>
+								</code>
+
+								<h4><u>Visualización</u></h4>					
+								<ol type = "a">
+									<li>Primer elemento lista ordenada tipo "a"</li>
+									<li>Segundo elemento lista ordenada tipo "a"</li>
+									<li>Tercer elemento lista ordenada tipo "a"</li>
+								</ol>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;ol <font color="#00A85C">type = "a"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Primer elemento lista ordenada tipo "a"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Segundo elemento lista ordenada tipo "a"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Tercer elemento lista ordenada tipo "a"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p><font color="#005B9C">&lt;/ol&gt;</font></p>
+								</code>
+
+								<h4><u>Visualización</u></h4>
+								<ol start="5">
+									<li>Primer elemento lista ordenada tipo "1" empezando por la quinta posición</li>
+									<li>Segundo elemento lista ordenada tipo "1"</li>
+									<li>Tercer elemento lista ordenada tipo "1"</li>
+								</ol>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;ol <font color="#00A85C">start = "5"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Primer elemento lista ordenada tipo "1" empezando por la quinta posición<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Segundo elemento lista ordenada tipo "1"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Tercer elemento lista ordenada tipo "1"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p><font color="#005B9C">&lt;/ol&gt;</font></p>
+								</code>
+
+								<h4><u>Visualización</u></h4>
+								<ol type = "i">
+									<li>Primer elemento lista ordenada tipo "i"</li>
+									<li>Segundo elemento lista ordenada tipo "i"</li>
+									<li>Tercer elemento lista ordenada tipo "i"</li>
+								</ol>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;ol <font color="#00A85C">type = "i"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Primer elemento lista ordenada tipo "i"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Segundo elemento lista ordenada tipo "i"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Tercer elemento lista ordenada tipo "i"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p><font color="#005B9C">&lt;/ol&gt;</font></p>
+								</code>
+
+								<h4><u>Visualización</u></h4>
+								<ol type = "I">
+									<li>Primer elemento lista ordenada tipo "I"</li>
+									<li>Segundo elemento lista ordenada tipo "I"</li>
+									<li>Tercer elemento lista ordenada tipo "I"</li>
+								</ol>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;ol <font color="#00A85C">type = "I"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Primer elemento lista ordenada tipo "I"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Segundo elemento lista ordenada tipo "I"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Tercer elemento lista ordenada tipo "I"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p><font color="#005B9C">&lt;/ol&gt;</font></p>
+								</code>
+
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Listas no ordenadas-->
+					<font color="#005B9C"><h2 id="listasNoOrdenadas">Listas no ordenadas</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;ul&gt;&lt;/ul&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">type = "tipo_de_marcador"</font>: Indica el tipo de marcador de la lista NO ordenada. El valor del tipo de marcador puede ser: <font color="#00A85C">"disc"</font> (Círculo con relleno), <font color="#00A85C">"circle"</font> (Círculo vacío) o <font color="#00A85C">"square"</font> (Cuadrado).</font></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir listas NO ordenadas</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;li&gt;&lt;/li&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">type = "tipo_de_marcador"</font>: Indica el tipo de marcador de la lista actual. El valor del tipo de marcador puede ser: <font color="#00A85C">"1"</font> (números naturales), <font color="#00A85C">"A"</font> (Letras mayúsculas), <font color="#00A85C">"a"</font> (Letras minúculas), <font color="#00A85C">"I"</font> (Números romanos mayúsculos), <font color="#00A85C">"i"</font> (Números romanos minúsculos)</font>, <font color="#00A85C">"disc"</font> (Círculo con relleno), <font color="#00A85C">"circle"</font> (Círculo vacío) o <font color="#00A85C">"square"</font> (Cuadrado).</font></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir los elementos de las listas (ordenadas y no ordenadas)</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplos:</h3>
+
+								<h4><u>Visualización</u></h4>
+								<ul type = "circle">
+									<li>Primer elemento lista NO ordenada tipo "circle"</li>
+									<li>Segundo elemento lista NO ordenada tipo "circle"</li>
+									<li>Tercer elemento lista NO ordenada tipo "circle"</li>
+								</ul>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;ul <font color="#00A85C">type = "I"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Primer elemento lista NO ordenada tipo "circle"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Segundo elemento lista NO ordenada tipo "circle"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Tercer elemento lista NO ordenada tipo "circle"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p><font color="#005B9C">&lt;/ul&gt;</font></p>
+								</code>
+
+								<h4><u>Visualización</u></h4>
+								<ul>
+									<li>Primer elemento lista NO ordenada tipo "disc"</li>
+									<li>Segundo elemento lista NO ordenada tipo "disc"</li>
+									<li>Tercer elemento lista NO ordenada tipo "disc"</li>
+								</ul>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;ul&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Primer elemento lista NO ordenada tipo "disc"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Segundo elemento lista NO ordenada tipo "disc"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Tercer elemento lista NO ordenada tipo "disc"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p><font color="#005B9C">&lt;/ul&gt;</font></p>
+								</code>
+
+								<h4><u>Visualización</u></h4>
+								<ul type = "square">
+									<li>Primer elemento lista NO ordenada tipo "square"</li>
+									<li>Segundo elemento lista NO ordenada tipo "square"</li>
+									<li>Tercer elemento lista NO ordenada tipo "square"</li>
+								</ul>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;ul <font color="#00A85C">type = "square"</font>&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Primer elemento lista NO ordenada tipo "square"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Segundo elemento lista NO ordenada tipo "square"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Tercer elemento lista NO ordenada tipo "square"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p><font color="#005B9C">&lt;/ul&gt;</font></p>
+								</code>	
+
+								<h4><u>Visualización</u></h4>
+								<ul>
+									<li>Primer elemento lista NO ordenada tipo "disc"</li>
+									<li type="circle">Segundo elemento lista NO ordenada tipo "circle"</li>
+									<li type="square">Tercer elemento lista NO ordenada tipo "square"</li>
+								</ul>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;ul&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li&gt;</font>Primer elemento lista NO ordenada tipo "disc"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li <font color="#00A85C">type = "circle"</font>&gt;</font>Segundo elemento lista NO ordenada tipo "circle"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;li <font color="#00A85C">type = "square"</font>&gt;</font>Tercer elemento lista NO ordenada tipo "square"<font color="#005B9C">&lt;/li&gt;</font></p>
+									<p><font color="#005B9C">&lt;/ul&gt;</font></p>
+								</code>					
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Listas de definición-->
+					<font color="#005B9C"><h2 id="listasDefinicion">Listas de definición</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;dl&gt;&lt;/dl&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir listas de definición</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;dt&gt;&lt;/dt&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir los términos de los elementos de una lista de definición</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;dd&gt;&lt;/dd&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para indicar las definiciones de los elementos de una lista de definición</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<dl>
+									<dt>SGML</dt>
+									<dd type="circle">Metalenguaje para la definición de otros lenguajes de marcado</dd>
+									<dt>XML</dt>
+									<dd type="circle">Lenguaje basado en SGML y que se emplea para describir datos</dd>
+								</dl>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;dl&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;dt&gt;</font>SGML<font color="#005B9C">&lt;/dt&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;dd&gt;</font>Metalenguaje para la definición de otros lenguajes de marcado<font color="#005B9C">&lt;/dd&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;dt&gt;</font>XML<font color="#005B9C">&lt;/dt&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;dd&gt;</font>Lenguaje basado en SGML y que se emplea para describir datos<font color="#005B9C">&lt;/dd&gt;</font></p>
+									<p><font color="#005B9C">&lt;/dl&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+		</table> <!-- fin de SECCIONES -->
+
+		<table height="200">
+			<tr>
+				<td><p> </p></td>
+			</tr>
+		</table>
+
+		<!-- FOOTER -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th bgcolor="#000"><a href="../info/quienesomos.html"><font face="arial" color="#fff">¿Quiénes somos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/dondestamos.html"><font face="arial" color="#fff">¿Dónde estamos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/contacto.html"><font face="arial" color="#fff">Contacto</font></a></th>
+				<th width="200" bgcolor="#000"><font face="arial" color="#fff">© DAW documentacion</font></th>
+				<th width="100" align="right" bgcolor="#000">
+					<img width="100" src="../images/logo.png" alt="Documentación DAW logo">
+				</th>
+			</tr>
+		</table>
+
+	</body>
+
+</html>

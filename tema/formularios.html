@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html>
+
+	<head>
+		<title>Documentación DAW XHTML</title>
+		<meta name="author" content="Javier Latorre">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
+	</head>
+
+	<body topmargin="0" leftmargin="5%" rightmargin="5%" link="#A11600" alink="#A11600" vlink="#A11600">
+				
+		<!-- ENCABEZADO -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th width="488px" align="left" bgcolor="#ffcc66">
+					<img src="../images/encabezado.png" alt="Documentación DAW XHTML 1.0">
+				</th>
+			</tr>
+		</table>
+
+		<!-- MENÚ -->
+		<table height="40" width="100%" cellspacing="0" cellpadding="0" border="5">
+			<tr>
+				<th><a href="../index.html"><font face="arial" color="#000">Inicio</font></a></th>
+				<th><a href="texto.html"><font face="arial" color="#000">Texto</font></a></th>
+				<th><a href="enlaces.html"><font face="arial" color="#000">Enlaces</font></a></th>
+				<th><a href="listas.html"><font face="arial" color="#000">Listas</font></a></th>
+				<th><a href="imagenes.html"><font face="arial" color="#000">Imágenes</font></a></th>
+				<th><a href="tablas.html"><font face="arial" color="#000">Tablas</font></a></th>
+				<th bgcolor="#005a9c"><a href="formularios.html"><font face="arial" color="#fff">Formularios</font></a></th>
+			</tr>
+		</table>
+
+		<!-- MENÚ 2 -->
+		<table width="100%" cellspacing="0" cellpadding="5" border="5">
+			<tr>
+				<th align="left"><a href="#tipoInputs"><font color="#000">Inputs </font><font color="#005B9C">&lt;label&gt;&lt;/label&gt; &lt;input /&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#textarea"><font color="#000">Textarea </font><font color="#005B9C">&lt;label&gt;&lt;/label&gt; &lt;textarea&gt;&lt;/textarea&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#listaDesplegable"><font color="#000">Lista desplegable </font><font color="#005B9C">&lt;label&gt; &lt;/label&gt;&lt;select&gt;&lt;optgroup&gt;&lt;option&gt;&lt;/option&gt;&lt;/optgroup&gt;&lt;/select&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#formularioCompleto"><font color="#000">Formulario completo </font><font color="#005B9C">&lt;form&gt; &lt;legend&gt;&lt;/legend&gt;&lt;fieldset&gt; ... &lt;/fieldset&gt;&lt;/form&gt;</font></a></th>
+			</tr>
+
+		</table>
+
+		<!--SECCIONES-->
+		<table width="100%">
+			<tr>
+				<td>
+					<!--Inputs-->
+					<font color="#005B9C"><h2 id="tipoInputs">Inputs</h2></font>						
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;label&gt;&lt;/label&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">for = "id_de_elemento"</font>: Indica el ID del campo del formulario para el que este elemento es su título.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir el título o leyenda de los campos definidos en un formulario. Al pulsar sobre éstos, se activa el campo al que hace referencia.</td>
+						</tr>
+					</table>
+					<br />
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;input /&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a>, <a href="../index.html#atributosEventos">eventos</a> y <a href="../index.html#atributosFoco">foco</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">type = "text | password | checkbox | radio | submit | reset | file | hidden | image | button"</font>:  Indica el tipo de control que se incluye en el formulario.</p>
+								<p><font color="#00A85C">name = "texto"</font>: Asigna un nombre al control (es imprescindible para que el servidor pueda procesar el formulario).</p>
+								<p><font color="#00A85C">value = "texto"</font>: Valor inicial del control.</p>
+								<p><font color="#00A85C">size = "unidad_de_medida"</font>:Tamaño inicial del control (para los campos de texto y de password se refiere al número de caracteres, en el resto de controles se refiere a su tamaño en píxel).</p>
+								<p><font color="#00A85C">maxlength = "numero"</font>: Máximo número de caracteres para los controles de texto y de password.</p>
+								<p><font color="#00A85C">checked = "checked"</font>: Para los controles checkbox y radiobutton permite indicar qué opción aparece preseleccionada.</p>
+								<p><font color="#00A85C">disabled = "disabled"</font>: El control aparece deshabilitado y su valor no se envía al servidor junto con el resto de datos.</p>
+								<p><font color="#00A85C">readonly = "readonly"</font>: El contenido del control no se puede modificar.</p>
+								<p><font color="#00A85C">src = "url"</font>: Para el control que permite crear botones con imágenes, indica la URL de la imagen que se emplea como botón de formulario.</p>
+								<p><font color="#00A85C">alt = "texto"</font>: Descripción del control.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea y etiqueta vacía</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplean para insertar un control en un formulario</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplos:</h3>
+
+								<!--Cuadro de texto-->
+								<h4><u>Cuadro de texto</u></h4>
+								<label for="nombre">Nombre</label>
+								<br/>
+								<input type="text" id="nombre" name="nombre" value="" />
+								<br/>
+								 
+								<label for="apellidos">Apellidos</label>
+								<br/>
+								<input type="text" id="apellidos" name="apellidos" value="" />
+								<br/>
+								 
+								<label for="dni">DNI</label>
+								<br/>
+								<input type="text" id="dni" name="dni" value="" size="10" maxlength="9" />
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="nombre"</font>&gt;</font>Nombre<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">type="text" id="nombre" name="nombre" value=""</font>/&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<br/>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="apellidos"</font>&gt;</font>Apellidos<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">type="text" id="apellidos" name="apellidos" value=""</font>/&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<br/>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="dni"</font>&gt;</font>DNI<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">type="text" id="dni" name="dni" value="" size="10" maxlength="9"</font>/&gt;</font></p>
+								</code>
+
+								<!--Cuadro de contraseña-->
+								<h4><u>Cuadro de contraseña</u></h4>
+								<label for="contrasena">Contraseña</label>
+								<br/>
+								<input type="password" id="contrasena" name="contrasena" value="" />
+								 
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font><font color="#005B9C">&lt;label <font color="#00A85C">for="contrasena"</font>&gt;</font>Contraseña<font color="#005B9C">&lt;/label&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">type="password" id="contrasena" name="contrasena" value=""</font>/&gt;</font></p>
+								</code>
+
+								<!--Checkboxes-->
+								<h4><u>Checkboxes</u></h4>
+								<input name="puesto_directivo" id="puesto_directivo" type="checkbox" value="direccion"/>
+								<label for="puesto_directivo">Dirección</label>
+								<br/>
+								<input name="puesto_tecnico" id="puesto_tecnico" type="checkbox" value="tecnico" checked="checked" />
+								<label for="puesto_tecnico">Técnico</label>
+								<br/>
+								<input name="puesto_empleado" id="puesto_empleado" type="checkbox" value="empleado"/>
+								<label for="puesto_empleado">Empleado</label>
+								 
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">name="puesto_directivo" id="puesto_directivo" type="checkbox" value="direccion"</font>/&gt;</font></p>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="puesto_directivo"</font>&gt;</font>Dirección<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">name="puesto_tecnico" id="puesto_tecnico" type="checkbox" value="tecnico"</font>/&gt;</font></p>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="puesto_tecnico"</font>&gt;</font>Técnico<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">name="puesto_empleado" id="puesto_empleado" type="checkbox" value="empleado"</font>/&gt;</font></p>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="puesto_empleado"</font>&gt;</font>Empleado<font color="#005B9C">&lt;/label&gt;</font></p>
+								</code>
+
+								<!--Radio buttons-->
+								<h4><u>Radio buttons</u></h4>
+								<input name="puestos" id="puesto_directivor" type="radio" value="direccion"/>
+								<label for="puesto_directivor">Dirección</label>
+								<br />
+								<input name="puestos" id="puesto_tecnicor" type="radio" value="tecnico" checked="checked" />
+								<label for="puesto_tecnicor">Técnico</label>
+								<br />
+								<input name="puestos" id="puesto_empleador" type="radio" value="empleado"/>
+								<label for="puesto_empleador">Empleado</label>
+								 
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">name="puestos" id="puesto_directivo" type="checkbox" value="direccion"</font>/&gt;</font></p>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="puesto_directivo"</font>&gt;</font>Dirección<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">name="puestos" id="puesto_tecnico" type="checkbox" value="tecnico"</font>/&gt;</font></p>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="puesto_tecnico"</font>&gt;</font>Técnico<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">name="puestos" id="puesto_empleado" type="checkbox" value="empleado"</font>/&gt;</font></p>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="puesto_empleado"</font>&gt;</font>Empleado<font color="#005B9C">&lt;/label&gt;</font></p>
+								</code>
+
+								<!--Botón de envío de formulario-->
+								<h4><u>Botón de envío de formulario</u></h4>
+								<input type="submit" name="enviar" value="Enviar" />
+								 
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">type="submit" name="enviar" value="Enviar"</font>/&gt;</font></p>
+								</code>
+
+								<!--Botón de reseteo del formulario-->
+								<h4><u>Botón de reseteo del formulario</u></h4>
+								<input type="reset" name="limpiar" value="Borrar datos del formulario" />
+								 
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">type="reset" name="limpiar" value="Borrar datos del formulario"</font>/&gt;</font></p>
+								</code>
+
+								<!--Ficheros adjuntos-->
+								<h4><u>Botón de reseteo del formulario</u></h4>
+								<label for="adjunto">Fichero adjunto</label>
+								<br/>
+								<input type="file" id="adjunto" name="adjunto" value="" />
+								 
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font><font color="#005B9C">&lt;label <font color="#00A85C">for="adjunto"</font>&gt;</font>Fichero adjunto<font color="#005B9C">&lt;/label&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">type="file" id="adjunto" name="adjunto" value=""</font>/&gt;</font></p>
+								</code>
+
+								<!--Botón de imagen-->
+								<h4><u>Botón de imagen</u></h4>
+								<input type="image" name="enviar" src="../images/boton_enviar.gif" />
+								 
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">type="image" name="enviar" src="../images/boton_enviar.gif"</font>/&gt;</font></p>
+								</code>
+
+								<!--Campos ocultos-->
+								<h4><u>Botón de reseteo del formulario</u></h4>
+								<p>El valor del atributo <font color="#00A85C">type</font> para este control de formulario es <font color="#00A85C">hidden</font>. Los campos ocultos no se muestran por pantalla, de forma que el usuario desconoce que el formulario los incluye. Normalmente los campos ocultos se utilizan para incluir información que necesita el servidor pero que no es necesario o no es posible que la establezca el usuario.</p>
+								<input type="hidden" name="url_previa" value="/articulo/primero.html" />
+								 
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;input <font color="#00A85C">type="hidden" name="url_previa" value="/articulo/primero.html"</font>/&gt;</font></p>
+								</code>
+
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Textarea-->
+					<font color="#005B9C"><h2 id="textarea">Textarea</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;textarea&gt;&lt;/textarea&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a>, <a href="../index.html#atributosEventos">eventos</a> y <a href="../index.html#atributosFoco">foco</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">rows = "numero"</font>: Número de filas de texto que mostrará el textarea.</p>
+								<p><font color="#00A85C">cols = "numero"</font>: Número de caracteres que se muestran en cada fila del textarea.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para incluir un área de texto en un formulario</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<label for="descripcion">Descripción del producto</label>
+								<br/>
+								<textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea>
+								 
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font><font color="#005B9C">&lt;label <font color="#00A85C">for="descripcion"</font>&gt;</font>Descripción del producto<font color="#005B9C">&lt;/label&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;textarea <font color="#00A85C">id="descripcion" name="descripcion" cols="40" rows="5"</font>&gt;</font><font color="#005B9C">&lt;/textarea&gt;</font></p>
+								</code>						
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Listas desplegables-->
+					<font color="#005B9C"><h2 id="listaDesplegable">Listas desplegables</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;select&gt;&lt;/select&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">size = "numero"</font>: Número de filas que se muestran de la lista (por defecto sólo se muestra una).</p>
+								<p><font color="#00A85C">multiple = "multiple"</font>: Si se incluye, se permite seleccionar más de un elemento.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para incluir una lista desplegable en un formulario</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;option&gt;&lt;/option&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">selected = "selected"</font>: Indica si el elemento aparece seleccionado por defecto al cargarse la página.</p>
+								<p><font color="#00A85C">size = "numero"</font>: El valor que se envía al servidor cuando el usuario elige esa opción.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir cada elemento de una lista desplegable</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;optgroup&gt;&lt;/optgroup&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">label = "texto"</font>: Texto que se muestra como título de la agrupación de opciones.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir una agrupación lógica de opciones de una lista desplegable</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+
+								<h4><u>Visualización</u></h4>
+								<label for="programa">Programa seleccionado</label> <br/>
+								<select id="programa" name="programa">
+								  <optgroup label="Sistemas Operativos">
+								    <option value="Windows">Windows</option>
+								    <option value="Mac">Mac</option>
+								    <option value="Linux">Linux</option>
+								    <option value="Other">Otro</option>
+								  </optgroup>
+								  <optgroup label="Navegadores">
+								    <option value="Internet Explorer" selected="selected">Internet Explorer</option>
+								    <option value="Firefox">Firefox</option>
+								    <option value="Safari">Safari</option>
+								    <option value="Opera">Opera</option>
+								    <option value="Other">Otro</option>
+								  </optgroup>
+								</select>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;label <font color="#00A85C">for="programa"</font>&gt;</font>Programa seleccionado<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p><font color="#005B9C">&lt;select <font color="#00A85C">id="programa" name="programa"</font>&gt;</font></p>
+									
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;optgroup <font color="#00A85C">label="Sistemas Operativos"</font>&gt;</font></p>
+
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;option <font color="#00A85C">value="Windows"</font>&gt;</font>Windows<font color="#005B9C">&lt;/option&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;option <font color="#00A85C">value="Mac"</font>&gt;</font>Mac<font color="#005B9C">&lt;/option&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;option <font color="#00A85C">value="Linux"</font>&gt;</font>Linux<font color="#005B9C">&lt;/option&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;option <font color="#00A85C">value="Other"</font>&gt;</font>Otro<font color="#005B9C">&lt;/option&gt;</font></p>
+
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/optgroup&gt;</font></p>
+
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;optgroup <font color="#00A85C">label="Navegadores"</font>&gt;</font></p>
+
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;option <font color="#00A85C">value="Internet Explorer" selected="selected"</font>&gt;</font>Internet Explorer<font color="#005B9C">&lt;/option&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;option <font color="#00A85C">value="Firefox"</font>&gt;</font>Firefox<font color="#005B9C">&lt;/option&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;option <font color="#00A85C">value="Safari"</font>&gt;</font>Safari<font color="#005B9C">&lt;/option&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;option <font color="#00A85C">value="Opera"</font>&gt;</font>Opera<font color="#005B9C">&lt;/option&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;option <font color="#00A85C">value="Other"</font>&gt;</font>Otro<font color="#005B9C">&lt;/option&gt;</font></p>
+
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/optgroup&gt;</font></p>
+
+									<p><font color="#005B9C">&lt;/select&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Formulario completo-->
+					<font color="#005B9C"><h2 id="formularioCompleto">Formulario completo</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;form&gt;&lt;/form&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">action = "url"</font>: Indica la URL que se encarga de procesar los datos del formulario.</p>
+								<p><font color="#00A85C">method = "POST o GET"</font>: Método HTTP empleado al enviar el formulario.</p>
+								<p><font color="#00A85C">enctype = "application/x-www-form-urlencoded o multipart/form-data"</font>: Tipo de codificación empleada al enviar el formulario al servidor (sólo se indica de forma explícita en los formularios que permiten adjuntar archivos).</p>
+								<p><font color="#00A85C">accept = "tipo_de_contenido"</font>: Lista separada por comas de todos los tipos de archivos aceptados por el servidor (sólo para los formularios que permiten adjuntar archivos).</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para insertar un formulario en la página</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;legend&gt;&lt;/legend&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para definir el título o leyenda de un conjunto de campos de formulario agrupados con la etiqueta fieldset</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;fieldset&gt;&lt;/fieldset&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para agrupar de forma lógica varios campos de un formulario</td>
+						</tr>
+					</table>							
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<form action="maneja_formulario.php" method="post">
+								<fieldset>
+									<legend>Datos personales</legend>
+
+									<label for="nombre">Nombre</label>
+									<br/>
+									<input type="text" id="nombre" name="nombre" value="" />
+									<br/>
+									 
+									<label for="apellidos">Apellidos</label>
+									<br/>
+									<input type="text" id="apellidos" name="apellidos" value="" />
+									<br/>
+									 
+									<label for="dni">DNI</label>
+									<br/>
+									<input type="text" id="dni" name="dni" value="" size="10" maxlength="9" />
+									<br/>
+									<br/>
+
+									<input type="reset" name="limpiar" value="Borrar datos del formulario" />
+								</fieldset>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;form <font color="#00A85C">action="maneja_formulario.php" method="post"</font>&gt;</font></p>
+									
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;fieldset&gt;</font></p>
+
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;legend&gt;</font>Datos personales<font color="#005B9C">&lt;/legend&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;label <font color="#00A85C">for="nombre"</font>&gt;</font>Nombre<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;br /&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;input <font color="#00A85C">type="text" id="nombre" name="nombre" value=""</font>/&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;br /&gt;</font></p>
+									<br&nbsp;&nbsp;&nbsp;&nbsp;/>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;label <font color="#00A85C">for="apellidos"</font>&gt;</font>Apellidos<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;br /&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;input <font color="#00A85C">type="text" id="apellidos" name="apellidos" value=""</font>/&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;br /&gt;</font></p>
+									<br&nbsp;&nbsp;&nbsp;&nbsp;/>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;label <font color="#00A85C">for="dni"</font>&gt;</font>DNI<font color="#005B9C">&lt;/label&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;br /&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;input <font color="#00A85C">type="text" id="dni" name="dni" value="" size="10" maxlength="9"</font>/&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;input <font color="#00A85C">type="reset" name="limpiar" value="Borrar datos del formulario"</font>/&gt;</font></p>
+
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/fieldset&gt;</font></p>
+
+									<p><font color="#005B9C">&lt;/form&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+
+				</td>
+			</tr>
+		</table> <!-- fin de SECCIONES -->
+
+		<table height="200">
+			<tr>
+				<td><p> </p></td>
+			</tr>
+		</table>
+
+		<!-- FOOTER -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th bgcolor="#000"><a href="../info/quienesomos.html"><font face="arial" color="#fff">¿Quiénes somos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/dondestamos.html"><font face="arial" color="#fff">¿Dónde estamos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/contacto.html"><font face="arial" color="#fff">Contacto</font></a></th>
+				<th width="200" bgcolor="#000"><font face="arial" color="#fff">© DAW documentacion</font></th>
+				<th width="100" align="right" bgcolor="#000">
+					<img width="100" src="../images/logo.png" alt="Documentación DAW logo">
+				</th>
+			</tr>
+		</table>
+
+	</body>
+
+</html>

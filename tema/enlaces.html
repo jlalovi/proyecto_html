@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html>
+
+	<head>
+		<title>Documentación DAW XHTML</title>
+		<meta name="author" content="Javier Latorre">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
+	</head>
+
+	<body topmargin="0" leftmargin="5%" rightmargin="5%" link="#A11600" alink="#A11600" vlink="#A11600">
+
+		<!-- ENCABEZADO -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th width="488px" align="left" bgcolor="#ffcc66">
+					<img src="../images/encabezado.png" alt="Documentación DAW XHTML 1.0">
+				</th>
+			</tr>
+		</table>
+
+		<!-- MENÚ -->
+		<table height="40" width="100%" cellspacing="0" cellpadding="0" border="5">
+			<tr>
+				<th><a href="../index.html"><font face="arial" color="#000">Inicio</font></a></th>
+				<th><a href="texto.html"><font face="arial" color="#000">Texto</font></a></th>
+				<th bgcolor="#005a9c"><a href="enlaces.html"><font face="arial" color="#fff">Enlaces</font></a></th>
+				<th><a href="listas.html"><font face="arial" color="#000">Listas</font></a></th>
+				<th><a href="imagenes.html"><font face="arial" color="#000">Imágenes</font></a></th>
+				<th><a href="tablas.html"><font face="arial" color="#000">Tablas</font></a></th>
+				<th><a href="formularios.html"><font face="arial" color="#000">Formularios</font></a></th>
+			</tr>
+		</table>
+
+		<!-- MENÚ 2 -->
+		<table width="100%" cellspacing="0" cellpadding="5" border="5">
+			<tr>
+				<th align="left"><a href="#enlacesBasicos"><font color="#000">Enlaces básicos </font><font color="#005B9C">&lt;a&gt;&lt;/a&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#enlacesAvanzados"><font color="#000">Enlaces avanzados </font><font color="#005B9C">&lt;a&gt;&lt;/a&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#scripts"><font color="#000">Scripts </font><font color="#005B9C">&lt;script&gt;&lt;/script&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#links"><font color="#000">Links </font><font color="#005B9C">&lt;link&gt;&lt;/link&gt;</font></a></th>
+			</tr>
+		</table>
+
+		<!--SECCIONES-->
+		<table width="100%">
+			<tr>
+				<td>
+					<!--Enlaces básicos-->
+					<font color="#005B9C"><h2 id="enlacesBasicos">Enlaces básicos</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;a&gt;&lt;/a&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a>, <a href="../index.html#atributosEventos">eventos</a> y <a href="../index.html#atributosFoco">foco</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">name = "texto"</font>: Permite nombrar al enlace para que se pueda acceder desde otros enlaces. Este atributo está cayendo en desuso, ya que cumple la misma función que el atributo <font color="#00A85C">id = "texto"</font>.</p>
+								<p><font color="#00A85C">href = "url"</font>: Indica la URL del recurso que se quiere enlazar.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para enlazar todo tipo de recursos</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Este <a href="#">enlace</a> te lleva al principio de esta página.</p>
+								<p>Este otro <a href="http://librosweb.es/xhtml/capitulo_4/enlaces_basicos.html">enlace</a> te lleva a la página que estoy tomando como referencia para los contenidos de esta página.</p>
+								<p>Este <a href="#enlacesAvanzados">enlace</a> te lleva al siguiente apartado de "Enlaces avanzados".</p>
+								<p>Y este último <a href="../index.html#atributosBasicos">enlace</a> te lleva a la sección de Atributos básicos en la página de inicio.</p>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font>Este <font color="#005B9C">&lt;a <font color="00A85C">href="#"</font>&gt;</font>enlace<font color="#005B9C">&lt;/a&gt;</font> te lleva al principio de esta página.<font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;p&gt;</font>Este otro <font color="#005B9C">&lt;a <font color="00A85C">href="http://librosweb.es/xhtml/capitulo_4/enlaces_basicos.html"</font>&gt;</font>enlace<font color="#005B9C">&lt;/a&gt;</font> te lleva a la página que estoy tomando como referencia para los contenidos de esta página.<font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;p&gt;</font>Este <font color="#005B9C">&lt;a <font color="00A85C">href="#enlacesAvanzados"</font>&gt;</font>enlace<font color="#005B9C">&lt;/a&gt;</font> te lleva al siguiente apartado de "Enlaces avanzados".<font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;p&gt;</font>Y este último  <font color="#005B9C">&lt;a <font color="00A85C">href="../index.html#atributosBasicos"</font>&gt;</font>enlace<font color="#005B9C">&lt;/a&gt;</font> te lleva a la sección de Atributos básicos en la página de inicio.<font color="#005B9C">&lt;/p&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Enlaces avanzados-->
+					<font color="#005B9C"><h2 id="enlacesAvanzados">Enlaces avanzados</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiquetas</th>
+							<th><font color="#005B9C">&lt;a&gt;&lt;/a&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a>, <a href="../index.html#atributosEventos">eventos</a> y <a href="../index.html#atributosFoco">foco</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">name = "texto"</font>: Permite nombrar al enlace para que se pueda acceder desde otros enlaces. Este atributo está cayendo en desuso, ya que cumple la misma función que el atributo <font color="#00A85C">id = "texto"</font>.</p>
+								<p><font color="#00A85C">href = "url"</font>: Indica la URL del recurso que se quiere enlazar.</p>
+								<p><font color="#00A85C">hreflang = "codigo_idioma"</font>: Idioma del recurso del enlazado. Puede ser "en", "es", "fr", etc. Ver <a href="http://librosweb.es/xhtml/capitulo_4/enlaces_avanzados.html#idioma_del_enlace_hreflang">códigos de idioma</a>.</p>
+								<p><font color="#00A85C">type = "tipo_de_contenido"</font>: Permite "avisar" al navegador sobre el tipo de contenido que se enlaza (imágenes, archivos, etc.) para que pueda preparase en caso de que no entienda ese contenido.</p>
+								<p><font color="#00A85C">rel = "tipo_de_relacion"</font>: Describe la relación del documento actual con el recurso enlazado. Ver <a href="http://librosweb.es/xhtml/capitulo_4/enlaces_avanzados.html#tipo_de_relacion_rel_y_rev">tipos de relación</a>.</p>
+								<p><font color="#00A85C">rev = "tipo_de_relacion"</font>: Describe la relación del recurso enlazado con el documento actual. Ver <a href="http://librosweb.es/xhtml/capitulo_4/enlaces_avanzados.html#tipo_de_relacion_rel_y_rev">tipos de relación</a>.</p>
+								<p><font color="#00A85C">charset = "tipo_de_charset"</font>: Describe la codificación del recurso enlazado. Ver <a href="http://www.iana.org/assignments/character-sets/character-sets.xhtml">tipos de charset</a>.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para enlazar todo tipo de recursos</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplos:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Este <a href="#enlacesBasicos" rel="prev" rev="next">enlace</a> te lleva al apartado anterior "Enlaces básicos".</p>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font>Este <font color="#005B9C">&lt;a <font color="00A85C">href="#enlacesAvanzados" rel="next" rev="prev"</font>&gt;</font>enlace<font color="#005B9C">&lt;/a&gt;</font> te lleva al siguiente apartado de "Enlaces avanzados".<font color="#005B9C">&lt;/p&gt;</font></p>
+								</code>	
+								<h4><u>Visualización</u></h4>
+								<p><a href="http://www.google.com" hreflang="en" type="text/html" charset="UTF-8">Página principal de Google</a></p>
+								<h4>Código</h4>								
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font><font color="#005B9C">&lt;a <font color="00A85C">href="http://www.google.com" hreflang="en" type="text/html" charset="UTF-8"</font>&gt;</font>Página principal de Google<font color="#005B9C">&lt;/a&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+								</code>
+								<h4><u>Visualización</u></h4>
+								<p><a href="../images/logo.png" type="image/jpg">Logotipo de esta página</a></p>
+								<h4>Código</h4>							
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font><font color="#005B9C">&lt;a <font color="00A85C">href="../images/logo.png" type="image/jpg"</font>&gt;</font>Logotipo de esta página<font color="#005B9C">&lt;/a&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+								</code>
+								<h4><u>Visualización</u></h4>
+								<p>Como hemos visto, visualmente, un enlace es igual independientemente del tipo que sea (a no ser, evidentemente, que encapsules algo que no sea texto, como las flechas "subir" que tengo distribuídas en la página web para subir al menú), que son <strong>imágenes encapsuladas con la etiqueta <font color="#005B9C">&lt;a&gt;&lt;/a&gt;</font></strong>:</p>
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+								<h4>Código</h4>
+								<code>
+									<p><font color="#005B9C">&lt;a <font color="00A85C">title="¡Subir!" href="#"</font>&gt;</font><font color="#005B9C">&lt;img <font color="00A85C">src="../images/arriba.png" alt="enlace para subir a inicio"</font> /&gt;</font><font color="#005B9C">&lt;/a&gt;</font></p>	
+								</code>
+								<h4><u>Enlaces a correos electrónicos</u></h4>
+								<p>También hay enlaces que abren automáticamente el programa de <strong>correo electrónico</strong> del ordenador del usuario y establece la dirección de envío al valor indicado después de <font color="00A85C">mailto:</font> La sintaxis es la misma que la de un enlace normal, salvo que se cambia el prefijo <font color="00A85C">http://</font> por <font color="00A85C">mailto::</font></p>
+								<code>
+									<p><font color="#005B9C">&lt;a <font color="00A85C">href="mailto:nombre@direccion.com" title="Dirección de email para solicitar más información"</font>&gt;</font>Enviar correo electrónico<font color="#005B9C">&lt;/a&gt;</font></p>	
+								</code>
+								<p>La sintaxis <font color="00A85C">mailto:</font> permite utilizarlo para otros ejemplos más complejos:</font></p>
+								<code>
+									<p><font color="#005B9C">&lt;a <font color="00A85C">href="mailto:nombre@direccion.com,otro_nombre@direccion.com"</font>&gt;</font>Enviar correos electrónico<font color="#005B9C">&lt;/a&gt;</font></p>
+									<p><font color="#005B9C">&lt;a <font color="00A85C">href="mailto:nombre@direccion.com?subject=Solicitud de más información"</font>&gt;</font>Enviar correo electrónico con asunto<font color="#005B9C">&lt;/a&gt;</font></p>	
+									<p><font color="#005B9C">&lt;a <font color="00A85C">href="mailto:nombre@direccion.com?body=Estaría interesado en solicitar más información sobre sus productos"</font>&gt;</font>Enviar correo electrónico con contenido<font color="#005B9C">&lt;/a&gt;</font></p>	
+								</code>
+								<p>Evidentemente, todas las opciones anteriores se pueden combinar entre sí para realizar ejemplos más avanzados.</p>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Scripts-->
+					<font color="#005B9C"><h2 id="scripts">Scripts</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;script&gt;&lt;/script&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">src = "url"</font>: Indica la dirección del archivo que contiene código>
+								<p><font color="#00A85C">type = "tipo_de_contenido"</font>: Permite "avisar" al navegador sobre el tipo código se incluye (normalmente JavaScript).</p>
+								<p><font color="#00A85C">defer = "defer"</font>: códigova a modificar el contenido de la página web.</p>
+								<p><font color="#00A85C">charset = "tipo_de_charset"</font>: Describe la codificación dcódigoazado.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque y en línea (también puede ser una etiqueta vacía)</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para enlazar o definir un bloque códigormalmente JavaScript)</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								
+								<p>La etiqueta <font color="#005B9C">&lt;script&gt;</font> (tanto cuando enlaza, como cuando incluye directamente códigoede aparecer en cualquier parte del documento HTML, aunque normalmente se incluye dentro de la cabecera de la página (<font color="#005B9C">&lt;head&gt;&lt;/head&gt;</font>).</p>
+								<p>Además, aunque la etiqueta <font color="#005B9C">&lt;script&gt;</font> permite enlazcódigovarios lenguajes de programación, el uso habitual de <font color="#005B9C">&lt;script&gt;</font> consiste en enlazar un archivo JavaScript externo:</p>
+
+								<code>
+									<p><font color="#005B9C">&lt;html&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;head&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;title&gt;</font>Página web con un enlace a un script<font color="#005B9C">&lt;/title&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;script <font color="#00A85C">type="text/javascript" src="http://www.ejemplo.com/js/inicializar.js"</font>&gt;</font><font color="#005B9C">&lt;/script&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/head&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;body&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;...</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/body&gt;</font></p>
+									<p><font color="#005B9C">&lt;/html&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Links-->
+					<font color="#005B9C"><h2 id="links">Links</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;link&gt;&lt;/link&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">media = "tipo_de_medio"</font>: Indica el medio para el que debe aplicarse la relación</font>.</p>
+								<p><font color="#00A85C">href = "url"</font>: Indica la URL del recurso que se quiere enlazar. Los medios disponibles también están estandarizados, siendo los más comunes <font color="#00A85C">screen</font> para los contenidos mostrados en pantalla, <font color="#00A85C">print</font> para las impresoras y <font color="#00A85C">handheld</font> para los dispositivos móviles.</p>
+								<p><font color="#00A85C">hreflang = "codigo_idioma"</font>: Idioma del recurso del enlazado. Puede ser "en", "es", "fr", etc. Ver <a href="http://librosweb.es/xhtml/capitulo_4/enlaces_avanzados.html#idioma_del_enlace_hreflang">códigos de idioma</a>.</p>
+								<p><font color="#00A85C">type = "tipo_de_contenido"</font>: Permite "avisar" al navegador sobre el tipo de contenido que se enlaza (imágenes, archivos, etc.) para que pueda preparase en caso de que no entienda ese contenido.</p>
+								<p><font color="#00A85C">rel = "tipo_de_relacion"</font>: Describe la relación del documento actual con el recurso enlazado. Ver <a href="http://librosweb.es/xhtml/capitulo_4/enlaces_avanzados.html#tipo_de_relacion_rel_y_rev">tipos de relación</a>.</p>
+								<p><font color="#00A85C">rev = "tipo_de_relacion"</font>: Describe la relación del recurso enlazado con el documento actual. Ver <a href="http://librosweb.es/xhtml/capitulo_4/enlaces_avanzados.html#tipo_de_relacion_rel_y_rev">tipos de relación</a>.</p>
+								<p><font color="#00A85C">charset = "tipo_de_charset"</font>: Describe la codificación del recurso enlazado. Ver <a href="http://www.iana.org/assignments/character-sets/character-sets.xhtml">tipos de charset</a>.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+							<th scope="row">Descripción</th>
+							<td>Realza la importancia del texto que encierra (por defecto es interpretado visualmente en cursiva por los navegadores)</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplos:</h3>
+
+								<p>Al contrario que <font color="#005B9C">&lt;script&gt;</font> la etiqueta <font color="#005B9C">&lt;link&gt;</font> solamente se puede incluir dentro de la cabecera del documento. Se pueden añadir tantas etiquetas <font color="#005B9C">&lt;link&gt;</font> como sean necesarias, pero siempre dentro de (<font color="#005B9C">&lt;head&gt;&lt;/head&gt;</font>).</p>
+								<p>El uso habitual de la etiqueta <font color="#005B9C">&lt;link&gt;</font> es el de <strong>enlazar las hojas de estilos CSS, favicon y RSS</strong>:</p>
+								<code>
+									<p><font color="#005B9C">&lt;html&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;head&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;title&gt;</font>Encabezado con enlaces a hojas de estilos, favicon y RSS<font color="#005B9C">&lt;/title&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;link <font color="#00A85C">rel="stylesheet" type="text/css" href="/css/impresora.css" media="print"</font> /&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;link <font color="#00A85C">rel="stylesheet" type="text/css" href="/css/movil.css" media="handheld"</font> /&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;link <font color="#00A85C">rel="shortcut icon" href="/favicon.ico" type="image/ico"</font> /&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;link <font color="#00A85C">rel="alternate" type="application/rss+xml" title="Resumen de todos los artículos del blog" href="/feed.xml"</font> /&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/head&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;body&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;...</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/body&gt;</font></p>
+									<p><font color="#005B9C">&lt;/html&gt;</font></p>
+								</code>
+								<p>También se puede utilizar para indicar que existe una <strong>versión de la página en otro idioma</strong>:</p>
+								<code>
+									<p><font color="#005B9C">&lt;html&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;head&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;title&gt;</font>English tutorial<font color="#005B9C">&lt;/title&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;link <font color="#00A85C">lang="es" xml:lang="es" title="El tutorial en español" type="text/html" rel="alternate" hreflang="es" href="http://www.ejemplo.com/tutorial/espanol.html"</font> /&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/head&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;body&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;...</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/body&gt;</font></p>
+									<p><font color="#005B9C">&lt;/html&gt;</font></p>
+								</code>
+								<p>O para indicar que existe una <strong>versión de la página preparada para imprimir</strong>:</p>
+								<code>
+									<p><font color="#005B9C">&lt;html&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;head&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;title&gt;</font>Link para indicar versión para imprimir<font color="#005B9C">&lt;/title&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;link <font color="#00A85C">media="print" title="El tutorial en PDF" type="application/pdf" rel="alternate" href="http://www.ejemplo.com/tutorial/documento.pdf"</font> /&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/head&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;body&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;...</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/body&gt;</font></p>
+									<p><font color="#005B9C">&lt;/html&gt;</font></p>
+								</code>
+								<p>O bien para indicar que existe una página que es <strong>índice de la página actual</strong>:</p>
+								<code>
+									<p><font color="#005B9C">&lt;html&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;head&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;title&gt;</font>Tutorial – Capítulo 5<font color="#005B9C">&lt;/title&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#005B9C">&lt;link <font color="#00A85C">rel="start" title="El índice del tutorial" type="text/html" href="http://www.ejemplo.com/tutorial/indice.html"</font> /&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/head&gt;</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;body&gt;</font></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;...</font></p>
+									<p>&nbsp;&nbsp;<font color="#005B9C">&lt;/body&gt;</font></p>
+									<p><font color="#005B9C">&lt;/html&gt;</font></p>
+								</code>			
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+		</table> <!-- fin de SECCIONES -->
+
+		<table height="200">
+			<tr>
+				<td><p> </p></td>
+			</tr>
+		</table>
+
+		<!-- FOOTER -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th bgcolor="#000"><a href="../info/quienesomos.html"><font face="arial" color="#fff">¿Quiénes somos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/dondestamos.html"><font face="arial" color="#fff">¿Dónde estamos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/contacto.html"><font face="arial" color="#fff">Contacto</font></a></th>
+				<th width="200" bgcolor="#000"><font face="arial" color="#fff">© DAW documentacion</font></th>
+				<th width="100" align="right" bgcolor="#000">
+					<img width="100" src="../images/logo.png" alt="Documentación DAW logo">
+				</th>
+			</tr>
+		</table>
+
+	</body>
+
+</html>

@@ -1,0 +1,1126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html>
+
+	<head>
+		<title>Documentación DAW XHTML</title>
+		<meta name="author" content="Javier Latorre">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
+	</head>
+
+	<body topmargin="0" leftmargin="5%" rightmargin="5%" link="#A11600" alink="#A11600" vlink="#A11600">
+				
+		<!-- ENCABEZADO -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th width="488px" align="left" bgcolor="#ffcc66">
+					<img src="../images/encabezado.png" alt="Documentación DAW XHTML 1.0">
+				</th>
+			</tr>
+		</table>
+
+		<!-- MENÚ -->
+		<table height="40" width="100%" cellspacing="0" cellpadding="0" border="5">
+			<tr>
+				<th><a href="../index.html"><font face="arial" color="#000">Inicio</font></a></th>
+				<th bgcolor="#005a9c"><a href="texto.html"><font face="arial" color="#fff">Texto</font></a></th>
+				<th><a href="enlaces.html"><font face="arial" color="#000">Enlaces</font></a></th>
+				<th><a href="listas.html"><font face="arial" color="#000">Listas</font></a></th>
+				<th><a href="imagenes.html"><font face="arial" color="#000">Imágenes</font></a></th>
+				<th><a href="tablas.html"><font face="arial" color="#000">Tablas</font></a></th>
+				<th><a href="formularios.html"><font face="arial" color="#000">Formularios</font></a></th>
+			</tr>
+		</table>
+
+		<!-- MENÚ 2 -->
+		<table width="100%" cellspacing="0" cellpadding="5" border="5">
+			<tr>
+				<th align="left"><a href="#parrafo"><font color="#000">Párrafo </font><font color="#005B9C">&lt;p&gt;&lt;/p&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#secciones"><font color="#000">Secciones </font><font color="#005B9C">&lt;h1&gt;&lt;/h1&gt; / &lt;h2&gt;&lt;/h2&gt; / &lt;h3&gt;&lt;/h3&gt; / &lt;h4&gt;&lt;/h4&gt; / &lt;h5&gt;&lt;/h5&gt; / &lt;h6&gt;&lt;/h6&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#negrita"><font color="#000">Negrita </font><font color="#005B9C">&lt;strong&gt;&lt;/strong&gt; / &lt;b&gt;&lt;/b&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#cursiva"><font color="#000">Cursiva </font><font color="#005B9C">&lt;em&gt;&lt;/em&gt; / &lt;i&gt;&lt;/i&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#insercion"><font color="#000">Inserción </font><font color="#005B9C">&lt;ins&gt;&lt;/ins&gt; / &lt;u&gt;&lt;/u&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#tachado"><font color="#000">Tachado </font><font color="#005B9C">&lt;del&gt;&lt;/del&gt; / &lt;s&gt;&lt;/s&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#citaDeTexto"><font color="#000">Cita de texto </font><font color="#005B9C">&lt;blockquote&gt;&lt;/blockquote&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#abreviatura"><font color="#000">Abreviatura </font><font color="#005B9C">&lt;abbr&gt;&lt;/abbr&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#acronimo"><font color="#000">Acrónimo </font><font color="#005B9C">&lt;acronym&gt;&lt;/acronym&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#definicion"><font color="#000">Definición </font><font color="#005B9C">&lt;dfn&gt;&lt;/dfn&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#referencia"><font color="#000">Referencia </font><font color="#005B9C">&lt;cite&gt;&lt;/cite&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#saltoDeLinea"><font color="#000">Salto de línea </font><font color="#005B9C">&lt;br&gt;&lt;/br&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#preformateado"><font color="#000">Preformateado </font><font color="#005B9C">&lt;pre&gt;&lt;/pre&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#codigoFuente"><font color="#000">Código fuente </font><font color="#005B9C">&lt;code&gt;&lt;/code&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#superindice"><font color="#000">Superíndice </font><font color="#005B9C">&lt;sup&gt;&lt;/sup&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#subindice"><font color="#000">Subíndice </font><font color="#005B9C">&lt;sub&gt;&lt;/sub&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#fuente"><font color="#000">Fuente </font><font color="#005B9C">&lt;font&gt;&lt;/font&gt;</font></a></th>
+			</tr>
+			<tr>
+				<th align="left"><a href="#caracteresEspeciales"><font color="#000">Codificación de caracteres especiales</font></a></th>
+			</tr>
+		</table>
+
+		<!--SECCIONES-->
+		<table width="100%">
+			<tr>
+				<td>
+					<!--Parrafo-->
+					<font color="#005B9C"><h2 id="parrafo">Párrafo</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;p&gt;&lt;/p&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Delimita el contenido de un párrafo de texto</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+
+								<h4>Código</h4>				
+								<code>
+									<font color="#005B9C">&lt;p&gt;</font>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.<font color="#005B9C">&lt;/p&gt;</font>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Secciones-->
+					<font color="#005B9C"><h2 id="secciones">Secciones</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiquetas</th>
+							<th><font color="#005B9C">&lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;, &lt;h3&gt;&lt;/h3&gt;, &lt;h4&gt;&lt;/h4&gt;, &lt;h5&gt;&lt;/h5&gt; y &lt;h6&gt;&lt;/h6&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Define los títulos de las secciones de mayor a menor importancia de la página</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<h1>Sección 1</h1>
+								<h2>Sección 1</h2>
+								<h3>Sección 3</h3>
+								<h4>Sección 4</h4>
+								<h5>Sección 5</h5>
+								<h6>Sección 6</h6>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;h1&gt;</font>Sección 1<font color="#005B9C">&lt;/h1&gt;</font></p>
+									<p><font color="#005B9C">&lt;h2&gt;</font>Sección 2<font color="#005B9C">&lt;/h2&gt;</font></p>
+									<p><font color="#005B9C">&lt;h3&gt;</font>Sección 3<font color="#005B9C">&lt;/h3&gt;</font></p>
+									<p><font color="#005B9C">&lt;h4&gt;</font>Sección 4<font color="#005B9C">&lt;/h4&gt;</font></p>
+									<p><font color="#005B9C">&lt;h5&gt;</font>Sección 5<font color="#005B9C">&lt;/h5&gt;</font></p>
+									<p><font color="#005B9C">&lt;h6&gt;</font>Sección 6<font color="#005B9C">&lt;/h6&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Negrita-->
+					<font color="#005B9C"><h2 id="negrita">Negrita</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;strong&gt;&lt;/strong&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Resalta con la máxima importancia el texto que encierra (por defecto es interpretado visualmente en negrita por los navegadores)</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;b&gt;&lt;/b&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Marca en negrita el texto que encierra. A diferencia del anterior, sólo afecta a cuestiones de estilo</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et <strong>¡resaltado con strong!</strong> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <b>negrita</b> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+
+								<h4>Código</h4>				
+								<code>
+									<font color="#005B9C">&lt;p&gt;</font>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et <font color="#005B9C">&lt;strong&gt;</font>¡resaltado con strong!<font color="#005B9C">&lt;/strong&gt;</font> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <font color="#005B9C">&lt;b&gt;</font>negrita<font color="#005B9C">&lt;/b&gt;</font> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.<font color="#005B9C">&lt;/p&gt;</font>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Cursiva-->
+					<font color="#005B9C"><h2 id="cursiva">Cursiva</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;em&gt;&lt;/em&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Realza la importancia del texto que encierra (por defecto es interpretado visualmente en cursiva por los navegadores)</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;i&gt;&lt;/i&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Marca en cursiva el texto que encierra. A diferencia del anterior, sólo afecta a cuestiones de estilo</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et <em>¡resaltado con em!</em> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <i>cursiva</i> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+
+								<h4>Código</h4>				
+								<code>
+									<font color="#005B9C">&lt;p&gt;</font>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et <font color="#005B9C">&lt;em&gt;</font>¡resaltado con em!<font color="#005B9C">&lt;/em&gt;</font> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <font color="#005B9C">&lt;i&gt;</font>cursiva<font color="#005B9C">&lt;/i&gt;</font> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.<font color="#005B9C">&lt;/p&gt;</font>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Inserción-->
+					<font color="#005B9C"><h2 id="insercion">Inserción</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;ins&gt;&lt;/ins&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">cite = "url"</font>: Indica la URL de la página en la que se puede obtener más información sobre el motivo por el que se realizó la modificación.</p>
+								<p><font color="#00A85C">datetime = "fecha"</font>: Especifica la fecha y hora en la que se realizó el cambio.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque y en línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para marcar una modificación en los contenidos originales consistente en la inserción de un nuevo contenido (por defecto es interpretado visualmente subrayado por los navegadores)</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;u&gt;&lt;/u&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque y en línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Subraya el texto que encierra. A diferencia del anterior, sólo afecta a cuestiones de estilo</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et <ins datetime="20140412">¡marcado con em! el 4 de diciembre de 2014</ins> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <u>subrayado</u> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+
+								<h4>Código</h4>				
+								<code>
+									<font color="#005B9C">&lt;p&gt;</font>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et <font color="#005B9C">&lt;ins <font color="00A85C">datetime="20140412"</font>&gt;</font>¡marcado con ins! el 4 de diciembre de 2014<font color="#005B9C">&lt;/ins&gt;</font> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <font color="#005B9C">&lt;u&gt;</font>subrayado<font color="#005B9C">&lt;/u&gt;</font> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.<font color="#005B9C">&lt;/p&gt;</font>
+								</code>						
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Tachado-->
+					<font color="#005B9C"><h2 id="tachado">Tachado</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;del&gt;&lt;/del&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">cite = "url"</font>: Indica la URL de la página en la que se puede obtener más información sobre el motivo por el que se realizó la modificación.</p>
+								<p><font color="#00A85C">datetime = "fecha"</font>: Especifica la fecha y hora en la que se realizó el cambio.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque y en línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para marcar una modificación en los contenidos originales consistente en el borrado de cierto contenido (por defecto es interpretado visualmente tachado por los navegadores)</td>
+						</tr>
+					</table>
+					<br/>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;s&gt;&lt;/s&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque y en línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Tacha el texto que encierra. A diferencia del anterior, sólo afecta a cuestiones de estilo</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et <del>¡marcado con del! el 4 de diciembre de 2014</del> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <s>tachado</s> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+
+								<h4>Código</h4>
+								<code>
+									<font color="#005B9C">&lt;p&gt;</font>Este trozo de texto es un ejemplo de párrafo que lorem senectus et netus et <font color="#005B9C">&lt;del <font color="00A85C">datetime="20140412"</font>&gt;</font>¡marcado con del! el 4 de diciembre de 2014<font color="#005B9C">&lt;/del&gt;</font> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <font color="#005B9C">&lt;s&gt;</font>tachado<font color="#005B9C">&lt;/s&gt;</font> ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.<font color="#005B9C">&lt;/p&gt;</font>
+								</code>								
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Cita de Texto-->
+					<font color="#005B9C"><h2 id="citaDeTexto">Cita de texto</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;blockquote&gt;&lt;/blockquote&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">cite = "url"</font>: Indica la URL de la página en la que se puede obtener más información sobre el motivo por el que se realizó la modificación.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para indicar que el texto que encierra es una cita textual de otro texto externo</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Según el W3C, el valor del atributo <em>cite</em> en las etiquetas <strong>blockquote</strong> tiene el siguiente significado:</p> 
+								<blockquote cite="http://librosweb.es/xhtml/capitulo_3/marcado_basico_de_texto.html">"El valor de este atributo es una dirección URL que indica el documento original de la cita."</blockquote>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font>Según el W3C, el valor del atributo <font color="#005B9C">&lt;em&gt;</font>cite<font color="#005B9C">&lt;/em&gt;</font> en las etiquetas <font color="#005B9C">&lt;strong&gt;</font>blockquote<font color="#005B9C">&lt;/strong&gt;</font> tiene el siguiente significado:<font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;blockquote <font color="00A85C">cite="http://librosweb.es/xhtml/capitulo_3/marcado_basico_de_texto.html"</font>&gt;</font>"El valor de este atributo es una dirección URL que indica el documento original de la cita."<font color="#005B9C">&lt;/blockquote&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Abreviatura-->
+					<font color="#005B9C"><h2 id="abreviatura">Abreviatura</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;abbr&gt;&lt;/abbr&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">title = "texto"</font>: Indica el significado completo de la abreviatura al pasar el puntero del ratón por encima de lo englobado por la etiqueta</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para marcar las abreviaturas del texto y proporcionar el significado de esas abreviaturas</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Me mando un mensaje de texto diciendo <abbr title="¡Vente para acá!">"20 xa acá!"</abbr></p>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font>Me mando un mensaje de texto diciendo <font color="#005B9C">&lt;abbr <font color="00A85C">title="¡Vente para acá!"</font>&gt;</font>"20 xa acá!"<font color="#005B9C">&lt;/abbr&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Acrónimo-->
+					<font color="#005B9C"><h2 id="acronimo">Acrónimo</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;acronym&gt;&lt;/acronym&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">title = "texto"</font>: Indica el significado completo del acrónimo al pasar el puntero del ratón por encima de lo englobado por la etiqueta</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para marcar las siglas o acrónimos del texto y proporcionar el significado de esas siglas</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>El lenguaje <acronym title="HyperText Markup Language">HTML</acronym> es estandarizado por el <acronym title="World Wide Web Consortium">W3C</acronym>.</p>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font>El lenguaje <font color="#005B9C">&lt;acronym <font color="00A85C">title="HyperText Markup Language"</font>&gt;</font>HTML<font color="#005B9C">&lt;/acronym&gt;</font> es estandarizado por el <font color="#005B9C">&lt;acronym <font color="00A85C">title="World Wide Web Consortium"</font>&gt;</font>W3C<font color="#005B9C">&lt;/acronym&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Definición-->
+					<font color="#005B9C"><h2 id="definicion">Definición</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;dfn&gt;&lt;/dfn&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">title = "texto"</font>: Indica el significado completo del termino al pasar el puntero del ratón por encima de lo englobado por la etiqueta</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para marcar las definiciones de ciertos términos y proporcionar el significado de esos términos</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Con estos síntomas, podría tratarse de un caso de <abbr title="Imagen o sensación subjetiva, propia de un sentido, determinada por otra sensación que afecta a un sentido diferente">sinestesia</abbr></p>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font>Con estos síntomas, podría tratarse de un caso de <font color="#005B9C">&lt;abbr <font color="00A85C">title="Imagen o sensación subjetiva, propia de un sentido, determinada por otra sensación que afecta a un sentido diferente"</font>&gt;</font>sinestesia<font color="#005B9C">&lt;/abbr&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Referencia-->
+					<font color="#005B9C"><h2 id="referencia">Referencia</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;cite&gt;&lt;/cite&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea.</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se emplea para marcar una cita o una referencia a otras fuentes. En ocasiones, no está clara la diferencia entre <font color="#005B9C">&lt;cite&gt;</font> y <font color="#005B9C">&lt;blockquote&gt;</font>. El elemento <font color="#005B9C">&lt;cite&gt;</font> marca el autor de la cita (persona, documento, etc.) y <font color="#005B9C">&lt;blockquote&gt;</font> marca el contenido de la propia cita</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Como dijo <cite>Mahatma Gandhi</cite>:</p>
+								<blockquote>Vive como si fueras a morir mañana y aprende como si fueras a vivir para siempre.</blockquote>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font>Como dijo <font color="#005B9C">&lt;cite&gt;</font>Mahatma Gandhi<font color="#005B9C">&lt;/cite&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;blockquote&gt;</font>Vive como si fueras a morir mañana y aprende como si fueras a vivir para siempre.<font color="#005B9C">&lt;/blockquote&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Salto de Línea-->
+					<font color="#005B9C"><h2 id="saltoDeLinea">Salto de línea</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;br&gt;&lt;/br&gt; o &lt;br/&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea y etiqueta vacía</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Fuerza al navegador a insertar una nueva línea (vacía)</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>Este pedazo de párrafo...</p>
+								<br />
+								<p>...es separado de este otro párrafo por una línea vacía de tipo <font color="#005B9C">&lt;br /&gt;</font></p>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font>Este pedazo de párrafo...<font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;br /&gt;</font></p>
+									<p><font color="#005B9C">&lt;p&gt;</font>...es separado de este otro párrafo por una línea vacía de tipo <font color="#005B9C">&lt;br /&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Preformateado-->
+					<font color="#005B9C"><h2 id="preformateado">Preformateado</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;pre&gt;&lt;/pre&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>Bloque</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Muestra el texto que encierra tal y como está escrito (respetando los espacios en blanco)</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+<pre>
+        La etiqueta pre
+   respeta los espacios en blanco
+      y
+ muestra el texto
+     tal y como
+   está escrito
+</pre>
+
+								<h4>Código</h4>				
+<pre><code>
+<font color="#005B9C">&lt;pre&gt;</font>
+        La etiqueta pre
+   respeta los espacios en blanco
+      y
+ muestra el texto
+     tal y como
+   está escrito
+<font color="#005B9C">&lt;/pre&gt;</font>
+</code></pre>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Código fuente-->
+					<font color="#005B9C"><h2 id="codigoFuente">Código fuente</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;code&gt;&lt;/code&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Delimita el texto considerado un fragmento códigonte</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<code>Lo que está encapsulado en la etiqueta <font color="#005B9C">&lt;code&gt;</font> se ve así.</code>
+
+								<h4>Código</h4>				
+								<code>
+									<font color="#005B9C">&lt;code&gt;</font>Lo que está encapsulado en la etiqueta <font color="#005B9C">&lt;code&gt;</font> se ve así.<font color="#005B9C">&lt;/code&gt;</font>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Superíndice-->
+					<font color="#005B9C"><h2 id="superindice">Superíndice</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;sup&gt;&lt;/sup&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se utiliza para representar un superíndice.</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>4<sup>2</sup>=16</p>
+
+								<h4>Código</h4>				
+								<code>
+									<font color="#005B9C">&lt;p&gt;</font>4<font color="#005B9C">&lt;sup&gt;</font>2<font color="#005B9C">&lt;/sup&gt;</font>=16<font color="#005B9C">&lt;/p&gt;</font>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Subíndice-->
+					<font color="#005B9C"><h2 id="subindice">Subíndice</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;sub&gt;&lt;/sub&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a>, <a href="../index.html#atributosInternacionalizacion">internacionalización</a> y <a href="../index.html#atributosEventos">eventos</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Se utiliza para representar un subíndice.</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p>H<sub>2</sub>O</p>
+
+								<h4>Código</h4>				
+								<code>
+									<font color="#005B9C">&lt;p&gt;</font>H<font color="#005B9C">&lt;sub&gt;</font>2<font color="#005B9C">&lt;/sub&gt;</font>O<font color="#005B9C">&lt;/p&gt;</font>
+								</code>								
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Fuente-->
+					<font color="#005B9C"><h2 id="fuente">Fuente</h2></font>
+					<table width="60%" cellpadding="5" border="1">
+						<tr>
+							<th width="150" scope="row">Etiqueta</th>
+							<th><font color="#005B9C">&lt;font&gt;&lt;/font&gt;</font></th>
+						</tr>
+						<tr>
+							<th scope="row">Atributos comunes</th>
+							<td><a href="../index.html#atributosBasicos">Básicos</a> e <a href="../index.html#atributosInternacionalizacion">internacionalización</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Atributos propios</th>
+							<td>
+								<p><font color="#00A85C">color = "rgb, hexa o nombre color"</font>: Especifica el color del texto por defecto.</p>
+								<p><font color="#00A85C">face = "nombre de fuente"</font>: Define el nombre de la fuente por defecto</p>
+								<p><font color="#00A85C">size = "número entre 1-7"</font>: Especifica el tamaño de la fuente por defecto</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Tipo de elemento</th>
+							<td>En línea</td>
+						</tr>
+						<tr>
+							<th scope="row">Descripción</th>
+							<td>Especifica el tamaño, color y tipo de fuente para un texto.</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<h3>Ejemplo:</h3>
+								<h4><u>Visualización</u></h4>
+								<p><font size="3" color="red">Tamaño: 3 - color: rojo</font></p>
+								<p><font face="serif" color="blue">Nombre de fuente: serif - color: azul</font></p>
+								<p><font face="verdana" color="green" size="5">Nombre de fuente: verdana - color: verde</font></p>
+
+								<h4>Código</h4>				
+								<code>
+									<p><font color="#005B9C">&lt;p&gt;</font><font color="#005B9C">&lt;font <font color="#00A85C">size="3" color="red"</font>&gt;</font>Tamaño: 3 - color: rojo<font color="#005B9C">&lt;/font&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;p&gt;</font><font color="#005B9C">&lt;font <font color="#00A85C">face="serif" color="blue"</font>&gt;</font>Nombre de fuente: serif - color: azul<font color="#005B9C">&lt;/font&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+									<p><font color="#005B9C">&lt;p&gt;</font><font color="#005B9C">&lt;font <font color="#00A85C">face="verdana" color="green" size="5"</font>&gt;</font>Nombre de fuente: verdana - color: verde<font color="#005B9C">&lt;/font&gt;</font><font color="#005B9C">&lt;/p&gt;</font></p>
+								</code>							
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+
+					<!--Codificación de caracteres especiales-->
+					<font color="#005B9C"><h2 id="caracteresEspeciales">Codificación de caracteres especiales</h2></font>
+					<table cellpadding="5" border="1">
+						<tr>
+							<th scope="col">Entidad</th>
+							<th scope="col">Carácter</th>
+						</tr>
+						<tr>
+							<td>&amp;lt;</td>
+							<td align="center">&lt;</td>
+						</tr>
+						<tr>
+							<td>&amp;gt;</td>
+							<td align="center">&gt;</td>
+						</tr>
+						<tr>
+							<td>&amp;amp;</td>
+							<td align="center">&amp;</td>
+						</tr>
+						<tr>
+							<td>&amp;quot;</td>
+							<td align="center">&quot;</td>
+						</tr>
+						<tr>
+							<td>&amp;nbsp;</td>
+							<td align="center">(espacio en blanco)</td>
+						</tr>
+						<tr>
+							<td>&amp;apos;</td>
+							<td align="center">'</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<p>Los caracteres que vienen a continuación son típicos del español que no están codificados por defecto, a no ser que se declare algún sistema de codificación en el xhtml, como el UTF-8</p>
+							</td>
+						</tr>
+					</table>
+					<table cellpadding="5" border="1">
+						<tr>
+							<th scope="col">Entidad</th>
+							<th scope="col">Carácter</th>
+						</tr>
+						<tr>
+							<td>&amp;ntilde;</td>
+							<td align="center">ñ</td>
+						</tr>
+						<tr>
+							<td>&amp;Ntilde</td>
+							<td align="center">Ñ</td>
+						</tr>
+						<tr>
+							<td>&amp;aacute;</td>
+							<td align="center">á</td>
+						</tr>
+						<tr>
+							<td>&amp;eacute;</td>
+							<td align="center">é</td>
+						</tr>
+						<tr>
+							<td>&amp;iacute;</td>
+							<td align="center">í</td>
+						</tr>
+						<tr>
+							<td>&amp;oacute;</td>
+							<td align="center">ó</td>
+						</tr>
+						<tr>
+							<td>&amp;uacute;</td>
+							<td align="center">ú</td>
+						</tr>
+						<tr>
+							<td>&amp;Aacute;</td>
+							<td align="center">Á</td>
+						</tr>
+						<tr>
+							<td>&amp;Eacute;</td>
+							<td align="center">É</td>
+						</tr>
+						<tr>
+							<td>&amp;Iacute;</td>
+							<td align="center">Í</td>
+						</tr>
+						<tr>
+							<td>&amp;Oacute;</td>
+							<td align="center">Ó</td>
+						</tr>
+						<tr>
+							<td>&amp;Uacute;</td>
+							<td align="center">Ú</td>
+						</tr>
+						<tr>
+							<td>&amp;euro;</td>
+							<td align="center">€</td>
+						</tr>
+					</table>
+					<table width="80%">
+						<tr>
+							<td>
+								<p>En la Wikipedia se puede consultar la <a href="http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references">lista</a> completa de las 252 entidades HTML definidas.</p>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<a title="¡Subir!" href="#"><img src="../images/arriba.png" alt="enlace para subir a inicio"></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table> <!-- fin de SECCIONES -->
+
+		<table height="200">
+			<tr>
+				<td><p> </p></td>
+			</tr>
+		</table>
+
+		<!-- FOOTER -->
+		<table width="100%" cellspacing="0" cellpadding="0" border="5">			
+			<tr>
+				<th bgcolor="#000"><a href="../info/quienesomos.html"><font face="arial" color="#fff">¿Quiénes somos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/dondestamos.html"><font face="arial" color="#fff">¿Dónde estamos?</font></a></th>
+				<th bgcolor="#000"><a href="../info/contacto.html"><font face="arial" color="#fff">Contacto</font></a></th>
+				<th width="200" bgcolor="#000"><font face="arial" color="#fff">© DAW documentacion</font></th>
+				<th width="100" align="right" bgcolor="#000">
+					<img width="100" src="../images/logo.png" alt="Documentación DAW logo">
+				</th>
+			</tr>
+		</table>
+
+	</body>
+
+</html>
